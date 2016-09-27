@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BodyJobFile>
+	<Item>
+		<Date>07.07.2016 9:23:50</Date>
+		<Unit>Зубковой</Unit>
+		<Author>Сучков Виктор</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)630-04-72</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>30.06.2016 15:09:44</Date>
+		<Unit>Бутырки</Unit>
+		<Author>Николаев Никита</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(953)744-20-00</Telefon>
+		<ExtensionPhone>3409</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>30.06.2016 10:56:10</Date>
+		<Unit>Окружная (Ангар)</Unit>
+		<Author>Смирнов Дмитрий</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)973-73-60</Telefon>
+		<ExtensionPhone>2505</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>27.06.2016 9:09:31</Date>
+		<Unit>Фирсова</Unit>
+		<Author>Чижов Максим</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)981-05-00</Telefon>
+		<ExtensionPhone>4608</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>14.06.2016 10:08:09</Date>
+		<Unit>Дмитров</Unit>
+		<Author>Егоров Александр</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(926)037-47-87</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>14.06.2016 10:07:29</Date>
+		<Unit>Дмитров</Unit>
+		<Author>Гришина Марина</Author>
+		<Number>20</Number>
+		<Job>Уборщица</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(915)612-54-89</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>14.06.2016 10:06:51</Date>
+		<Unit>Дмитров</Unit>
+		<Author>Гришина Марина</Author>
+		<Number>05</Number>
+		<Job>Кассир</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(915)612-54-89</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>14.06.2016 10:05:24</Date>
+		<Unit>Дмитров</Unit>
+		<Author>Акимов Артем</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>NONE</Gender>
+		<Telefon>8(910)626-20-11</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>07.06.2016 12:01:59</Date>
+		<Unit>Верхняя</Unit>
+		<Author>Давыдова Татьяна</Author>
+		<Number>05</Number>
+		<Job>Кассир</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(910)645-02-60</Telefon>
+		<ExtensionPhone>3316</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>07.06.2016 12:00:35</Date>
+		<Unit>Верхняя</Unit>
+		<Author>Давыдова Татьяна</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>NONE</Gender>
+		<Telefon>8(910)645-02-60</Telefon>
+		<ExtensionPhone>3316</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>31.05.2016 15:27:58</Date>
+		<Unit>Зубковой</Unit>
+		<Author>Москвина Екатерина</Author>
+		<Number>20</Number>
+		<Job>Уборщица</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(953)734-66-24</Telefon>
+		<ExtensionPhone>3222</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>30.05.2016 12:08:18</Date>
+		<Unit>Шабулина</Unit>
+		<Author>Павлова Ольга</Author>
+		<Number>05</Number>
+		<Job>Кассир</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(903)839-68-71</Telefon>
+		<ExtensionPhone>3525</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>13.05.2016 10:21:46</Date>
+		<Unit>ТЦ на Окружной</Unit>
+		<Author>Гудков Сергей</Author>
+		<Number>11</Number>
+		<Job>Работник склада</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(953)746-54-14</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>13.05.2016 8:57:21</Date>
+		<Unit>Островского</Unit>
+		<Author>Овчинников Евгений</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>NONE</Gender>
+		<Telefon>8(920)638-33-98</Telefon>
+		<ExtensionPhone>2928</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>07.05.2016 16:36:23</Date>
+		<Unit>Новаторов</Unit>
+		<Author>Вахитов Фарит</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)635-60-95</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>07.05.2016 16:33:40</Date>
+		<Unit>ТЦ на Окружной</Unit>
+		<Author>Вахитов Фарит</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)635-60-95</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>02.05.2016 12:32:04</Date>
+		<Unit>Студия Мебели</Unit>
+		<Author>Бородин Игорь</Author>
+		<Number>03</Number>
+		<Job>Продавец корпусной мебели</Job>
+		<Gender>NONE</Gender>
+		<Telefon>8(905)187-67-70</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>28.04.2016 10:01:27</Date>
+		<Unit>Зубковой</Unit>
+		<Author>Люлин Алексей</Author>
+		<Number>02</Number>
+		<Job>Менеджер по продажам</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(920)950-93-39</Telefon>
+		<ExtensionPhone>3244</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>22.04.2016 13:38:49</Date>
+		<Unit>Отдел маркетинга</Unit>
+		<Author>Низовцев Андрей</Author>
+		<Number>08</Number>
+		<Job>Оператор отдела маркетинга</Job>
+		<Gender>NONE</Gender>
+		<Telefon>8(910)620-08-17</Telefon>
+		<ExtensionPhone>5221</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>19.04.2016 9:20:10</Date>
+		<Unit>Верхняя</Unit>
+		<Author>Махновская Мария</Author>
+		<Number>13</Number>
+		<Job>Экспедитор</Job>
+		<Gender>Мужской</Gender>
+		<Telefon>8(910)642-17-60</Telefon>
+		<ExtensionPhone/>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>24.02.2016 12:09:43</Date>
+		<Unit>Шабулина</Unit>
+		<Author>Сажина Ольга</Author>
+		<Number>04</Number>
+		<Job>Менеджер кредитного отдела</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(920)635-52-56</Telefon>
+		<ExtensionPhone>5172</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>24.02.2016 12:05:16</Date>
+		<Unit>ТЦ на Окружной</Unit>
+		<Author>Сажина Ольга</Author>
+		<Number>04</Number>
+		<Job>Менеджер кредитного отдела</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(920)635-52-56</Telefon>
+		<ExtensionPhone>5172</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>11.02.2016 13:22:59</Date>
+		<Unit>Островского</Unit>
+		<Author>Овчинников Евгений</Author>
+		<Number>20</Number>
+		<Job>Уборщица</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(920)638-33-98</Telefon>
+		<ExtensionPhone>2928</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+	<Item>
+		<Date>10.08.2015 15:58:51</Date>
+		<Unit>Верхняя</Unit>
+		<Author>Давыдова Татьяна</Author>
+		<Number>20</Number>
+		<Job>Уборщица</Job>
+		<Gender>Женский</Gender>
+		<Telefon>8(910)645-02-60</Telefon>
+		<ExtensionPhone>3316</ExtensionPhone>
+		<InLocalSite>Да</InLocalSite>
+		<InGlobalSite>Да</InGlobalSite>
+	</Item>
+</BodyJobFile>
