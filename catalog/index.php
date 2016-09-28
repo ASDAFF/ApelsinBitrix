@@ -1,6 +1,11 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог товаров");?>
 
+<?
+define('BX_DISABLE_INDEX_PAGE', true);
+include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels.php";
+?>
+
 <?$APPLICATION->IncludeComponent("bitrix:catalog", ".default",
 	array(
 		"PATH_TO_SHIPPING" => "/delivery/",
