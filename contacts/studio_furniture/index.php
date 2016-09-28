@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Студия мебели");
 include_once '../../apls_lib/apls_lib.php';
 includeSistemClasses("../../");
 
-ContactsMain::contactsStudioFurniture(17,119,"",660);
+ContactsMain::contactsStudioFurniture(16,119,"",660);
 ?>
 
 <div class="">
