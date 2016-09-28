@@ -8,6 +8,7 @@ IncludeTemplateLangFile(__FILE__);?>
 	<link rel="apple-touch-icon" sizes="114x114" href="<?=SITE_TEMPLATE_PATH?>/images/apple-touch-icon-114.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="<?=SITE_TEMPLATE_PATH?>/images/apple-touch-icon-144.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="<?=SITE_TEMPLATE_PATH?>/images/apple-touch-icon-144.png" />
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><?$APPLICATION->ShowTitle()?></title>
 	<?$APPLICATION->SetAdditionalCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");	
@@ -53,7 +54,8 @@ IncludeTemplateLangFile(__FILE__);?>
 	", true);	
 	$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
 	$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/script.js");
-	$APPLICATION->ShowHead();?>	
+	$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/APLS_ContentToColumns.js");
+	$APPLICATION->ShowHead();?>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 	<?global $arSetting;?>
@@ -225,6 +227,7 @@ IncludeTemplateLangFile(__FILE__);?>
 									);?>
 								<?}?>
 							<?endif;?>
+							<!--
 							<ul class="new_leader_disc">
 								<li>
 									<a class="new" href="<?=SITE_DIR?>catalog/newproduct/">
@@ -244,7 +247,8 @@ IncludeTemplateLangFile(__FILE__);?>
 										<span class="text"><?=GetMessage("CR_TITLE_DISCOUNT")?></span>
 									</a>
 								</li>
-							</ul>							
+							</ul>
+							-->
 							<?if($arSetting["CATALOG_LOCATION"]["VALUE"] == "LEFT"):?>
 								<?$APPLICATION->IncludeComponent("bitrix:main.include", "", 
 									array(
@@ -256,7 +260,7 @@ IncludeTemplateLangFile(__FILE__);?>
 									false,
 									array("HIDE_ICONS" => "Y")
 								);?>													
-								<?if($APPLICATION->GetCurPage(true)!= SITE_DIR."index.php") {?>
+								<?if($APPLICATION->GetCurPage(true)!= SITE_DIR."index.php" && 1==2) {?>
 									<?$APPLICATION->IncludeComponent("bitrix:main.include", "",
 										array(
 											"AREA_FILE_SHOW" => "file",
@@ -269,6 +273,7 @@ IncludeTemplateLangFile(__FILE__);?>
 									);?>
 								<?}?>
 							<?endif;?>
+							<!--
 							<div class="vendors">
 								<div class="h3"><?=GetMessage("MANUFACTURERS");?></div>
 								<?$APPLICATION->IncludeComponent("bitrix:main.include", "",
@@ -282,6 +287,8 @@ IncludeTemplateLangFile(__FILE__);?>
 									array("HIDE_ICONS" => "Y")
 								);?>
 							</div>
+							-->
+							<!--
 							<div class="subscribe">
 								<div class="h3"><?=GetMessage("SUBSCRIBE");?></div>
 								<p><?=GetMessage("SUBSCRIBE_TEXT");?></p>
@@ -297,6 +304,8 @@ IncludeTemplateLangFile(__FILE__);?>
 									false
 								);?>
 							</div>
+							-->
+							<!--
 							<?$APPLICATION->IncludeComponent("bitrix:main.include", "",
 								array(
 									"AREA_FILE_SHOW" => "file",
@@ -307,6 +316,7 @@ IncludeTemplateLangFile(__FILE__);?>
 								false,
 								array("HIDE_ICONS" => "Y")
 							);?>
+							-->
 						</div>
 						<div class="workarea">
 							<?if($APPLICATION->GetCurPage(true)== SITE_DIR."index.php"):
@@ -438,10 +448,12 @@ IncludeTemplateLangFile(__FILE__);?>
 											false,
 											array("HIDE_ICONS" => "Y")
 										);?>
+										<!--
 										<div class="podelitsya">											
 											<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
 											<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,gplus" data-yashareTheme="counter"></div>
 										</div>
+										-->
 										<div class="clr"></div>
 									</div>
 									<h1><?=$APPLICATION->ShowTitle(false);?></h1>
