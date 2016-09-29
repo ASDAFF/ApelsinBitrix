@@ -8,7 +8,7 @@
 	),
 	Array(
 		"Подъем",
-		"../delivery/index.php#climbInfo",
+		"../delivery/#climbInfo",
 		Array(),
 		Array(),
 		""

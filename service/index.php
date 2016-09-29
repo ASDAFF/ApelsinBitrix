@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Услуги");
 				<div class="title">Доставка</div>
 			</div>
 		</a>
-		<a href="../delivery/index.php#climbInfo" class="NavigatorBigIconElementHref">
+		<a href="../delivery/#climbInfo" class="NavigatorBigIconElementHref">
 			<div class="NavigatorBigIconElement">
 				<img class="main" src="img/icon/climb.png">
 				<img class="hover" src="img/icon/climb_hover.png">
