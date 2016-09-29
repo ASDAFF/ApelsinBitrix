@@ -1,51 +1,74 @@
-<?$aMenuLinks = Array(
+<?
+$aMenuLinks = Array(
 	Array(
-		"Как купить", 
-		"/howtobuy/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Главная",
+		"/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Способы оплаты", 
-		"/payments/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Каталог",
+		"/catalog/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Способы доставки", 
-		"/delivery/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Акции",
+		"/promo/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Кредит", 
-		"/credit/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Оплата",
+		"/payments/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Гарантия", 
-		"/warranty/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Доставка",
+		"/delivery/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Возврат и обмен", 
-		"/returns/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Услуги",
+		"/service/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Вопросы и ответы", 
-		"/faq/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Информация",
+		"/information/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Покупателям",
+		"/customers/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"О Компании",
+		"/about/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Контакты",
+		"/contacts/",
+		Array(),
+		Array(),
+		""
 	)
-);?>
+);
+?>

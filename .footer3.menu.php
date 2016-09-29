@@ -1,44 +1,72 @@
 <?$aMenuLinks = Array(
 	Array(
-		"Пресс-центр", 
-		"javascript:void(0)", 
-		Array(), 
-		Array(), 
-		"" 
+		"Информация",
+		"javascript:void(0)",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Акции", 
-		"javascript:void(0)", 
-		Array(), 
-		Array(), 
-		"" 
+		"Памятка покупателю",
+		"/information/customers_memo/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Новости", 
-		"/news/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Сервисные центры",
+		"/information/service_centers/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Обзоры и советы", 
-		"/reviews/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Вакансии",
+		"/information/vacancies/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Фотогалерея", 
-		"javascript:void(0)", 
-		Array(), 
-		Array(), 
-		"" 
+		"Особенности товаров",
+		"/information/features_products/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Видеогалерея", 
-		"javascript:void(0)", 
-		Array(), 
-		Array(), 
-		"" 
+		"Дисконт",
+		"/customers/discount/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Подарочные карты",
+		"/customers/gift_cards/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Скидка выходного дня",
+		"/customers/weekend_discount/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Программа бонус",
+		"/customers/bonus_program/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Кредит",
+		"/customers/credit/",
+		Array(),
+		Array(),
+		""
 	)
 );?>
