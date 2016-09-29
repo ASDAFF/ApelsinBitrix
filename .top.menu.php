@@ -1,72 +1,67 @@
-<?$aMenuLinks = Array(
+<?
+$aMenuLinks = Array(
 	Array(
-		"Каталог", 
-		"/catalog/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Каталог",
+		"/catalog/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Производители", 
-		"/vendors/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Акции",
+		"/promo/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Новости", 
-		"/news/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Оплата",
+		"/payments/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Обзоры", 
-		"/reviews/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Доставка",
+		"/delivery/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Оплата", 
-		"/payments/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Услуги",
+		"/service/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Доставка", 
-		"/delivery/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Информация",
+		"/information/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Кредит", 
-		"/credit/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Покупателям",
+		"/customers/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"Гарантия", 
-		"/warranty/", 
-		Array(), 
-		Array(), 
-		"" 
+		"О Компании",
+		"/about/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
-		"О Компании", 
-		"/about/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контакты", 
-		"/contacts/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Контакты",
+		"/contacts/",
+		Array(),
+		Array(),
+		""
 	)
-);?>
+);
+?>
