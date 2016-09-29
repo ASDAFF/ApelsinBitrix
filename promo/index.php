@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Акции");
-?><?$APPLICATION->IncludeComponent("bitrix:news", "stati", 
+?><?$APPLICATION->IncludeComponent("bitrix:news", "stati",
 	array(
-		"IBLOCK_TYPE" => "apelsin_data",
+		"IBLOCK_TYPE" => "content",
 		"IBLOCK_ID" => "18",
 		"NEWS_COUNT" => "12",
 		"USE_SEARCH" => "N",
