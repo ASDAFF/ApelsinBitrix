@@ -1,1 +1,1 @@
-<a href="http://altop.ru" target="_blank">Интернет-магазины<br />на 1С-Битрикс<span class="logo"><span class="altop">Altop</span><span class="ru">Ru</span></span></a>
+<img src="<?=SITE_TEMPLATE_PATH?>/images/apelsin_logo_h50.png" alt="logo" />

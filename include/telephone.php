@@ -1,1 +1,2 @@
-<p><span>7 (495)</span> 000 00 00<i class='fa fa-phone'></i></p><p><span>7 (495)</span> 000 00 00<i class='fa fa-phone'></i></p>
+<p><span>7 (4912)</span> 240 220<i class='fa fa-phone'></i></p>
+<p><span>7 (4912)</span> 502 020<i class='fa fa-phone'></i></p>
