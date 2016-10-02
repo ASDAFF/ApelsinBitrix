@@ -3,7 +3,7 @@ class APLS_CatalogItemDetailsPropertiesBlock {
 
     private $property = array();
     private $html = "";
-    private $idBlock = 32;// id инфоблока (Реквизиты товара)
+    private $idBlock = 19;// id инфоблока (Реквизиты товара)
     private $dataProductDetails;// ин-фа инфоблока (Реквизиты товара)
 	const TRUE_VALUE = "Да";
 
