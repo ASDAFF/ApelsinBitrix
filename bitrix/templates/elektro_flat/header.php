@@ -348,7 +348,7 @@ IncludeTemplateLangFile(__FILE__);?>
 										array("HIDE_ICONS" => "Y")
 									);?>
 								<?endif;
-								if(in_array("BANNERS", $arSetting["HOME_PAGE"]["VALUE"]) && 1==2):?>
+								if(in_array("BANNERS", $arSetting["HOME_PAGE"]["VALUE"])):?>
 									<?$APPLICATION->IncludeComponent("bitrix:main.include", "",
 										array(
 											"AREA_FILE_SHOW" => "file",
@@ -360,7 +360,7 @@ IncludeTemplateLangFile(__FILE__);?>
 										array("HIDE_ICONS" => "Y")
 									);?>
 								<?endif;
-								if(in_array("NEWS", $arSetting["HOME_PAGE"]["VALUE"]) && 1==2):?>
+								if(in_array("NEWS", $arSetting["HOME_PAGE"]["VALUE"])):?>
 									<?$APPLICATION->IncludeComponent("bitrix:main.include", "",
 										array(
 											"AREA_FILE_SHOW" => "file",
@@ -372,7 +372,7 @@ IncludeTemplateLangFile(__FILE__);?>
 										array("HIDE_ICONS" => "Y")
 									);?>
 								<?endif;
-								if(in_array("TABS", $arSetting["HOME_PAGE"]["VALUE"]) && 1==2):?>
+								if(in_array("TABS", $arSetting["HOME_PAGE"]["VALUE"])):?>
 									<div class="ndl_tabs">
 										<div class="section">
 											<ul class="tabs">
