@@ -331,6 +331,16 @@ endif;
 							Array("HIDE_ICONS" => "Y")
 						);?>
 					<?endif;?>
+					<?
+					/*** Выводим наш блок с реквизитами товаров ***/
+					include_once $_SERVER["DOCUMENT_ROOT"].'/apls_lib/catalog/APLS_CatalogItemDetailsPropertiesBlock.php';
+					$APLS_CIDPB = new APLS_CatalogItemDetailsPropertiesBlock($arResult["PROPERTIES"]);
+					$APLS_CIDPB->get();
+					include_once $_SERVER["DOCUMENT_ROOT"].'/apls_lib/catalog/APLS_CatalogItemDetailsAction.php';
+					$APLS_Action = new APLS_CatalogItemDetailsAction($arResult["PROPERTIES"]);
+					$APLS_Action->getAction();
+					?>
+					<div class='productDetailsWrapper advantages'>Дополнительные реквизиты товара будут здесь</div>
 				</div>
 				<div class="column four">
 					<div class="price_buy_detail" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
