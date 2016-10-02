@@ -138,4 +138,9 @@ function DoIBlockAfterSave($arg1, $arg2 = false) {
 			}
 		}
 	}
-}?>
+}
+
+// Наш триггер
+require($_SERVER["DOCUMENT_ROOT"]."/apls_lib/EventHandlers/DoItAfterUpdateElement.php");
+
+?>
