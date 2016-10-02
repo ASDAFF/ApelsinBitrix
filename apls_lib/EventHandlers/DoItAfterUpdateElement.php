@@ -2,7 +2,7 @@
 AddEventHandler("iblock", "OnAfterIBlockElementUpdate", "DoItAfterUpdateElement");
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", "DoItAfterUpdateElement");
 
-define("SHOP_IBLOC_ID_FOR_THIS_SCRIPT", "31");
+define("SHOP_IBLOC_ID_FOR_THIS_SCRIPT", "13");
 define("ACTIVE_TRIGGER_PROPERTY_XML_ID", "26e05687-c602-4c36-8b63-debb1b4e0250");
 define("ACTIVE_TRIGGER_PROPERTY_VALUE_DEACTIVE", "Нет");
 define("ACTIVE_TRIGGER_PROPERTY_VALUE_ACTIVE", "Да");
