@@ -101,34 +101,36 @@ $templateData["JS_OBJ"] = $strObName;
 <?$sticker = "";
 $timeBuy = "";
 if(array_key_exists("PROPERTIES", $arResult) && is_array($arResult["PROPERTIES"])):
-	/***NEW***/
-	if(array_key_exists("NEWPRODUCT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["NEWPRODUCT"]["VALUE"] == false):
-		$sticker .= "<span class='new'>".GetMessage("CATALOG_ELEMENT_NEWPRODUCT")."</span>";
-	endif;
-	/***HIT***/
-	if(array_key_exists("SALELEADER", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["SALELEADER"]["VALUE"] == false):
-		$sticker .= "<span class='hit'>".GetMessage("CATALOG_ELEMENT_SALELEADER")."</span>";
-	endif;
-	/***DISCOUNT***/
-	if(isset($arResult["OFFERS"]) && !empty($arResult["OFFERS"])):
-		if($arSetting["OFFERS_VIEW"]["VALUE"] == "LIST"):			
-			if($arResult["TOTAL_OFFERS"]["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"] > 0):
-				$sticker .= "<span class='discount'>-".$arResult["TOTAL_OFFERS"]["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"]."%</span>";
-			else:
-				if(array_key_exists("DISCOUNT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["DISCOUNT"]["VALUE"] == false):	
-					$sticker .= "<span class='discount'>%</span>";
-				endif;
-			endif;
-		endif;	
-	else:
-		if($arResult["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"] > 0):
-			$sticker .= "<span class='discount'>-".$arResult["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"]."%</span>";
-		else:
-			if(array_key_exists("DISCOUNT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["DISCOUNT"]["VALUE"] == false):
-				$sticker .= "<span class='discount'>%</span>";
-			endif;
-		endif;
-	endif;
+	$catalogItemLabels = new APLS_CatalogItemLabels($arResult);
+	$sticker .= $catalogItemLabels->getHTML();
+//	/***NEW***/
+//	if(array_key_exists("NEWPRODUCT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["NEWPRODUCT"]["VALUE"] == false):
+//		$sticker .= "<span class='new'>".GetMessage("CATALOG_ELEMENT_NEWPRODUCT")."</span>";
+//	endif;
+//	/***HIT***/
+//	if(array_key_exists("SALELEADER", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["SALELEADER"]["VALUE"] == false):
+//		$sticker .= "<span class='hit'>".GetMessage("CATALOG_ELEMENT_SALELEADER")."</span>";
+//	endif;
+//	/***DISCOUNT***/
+//	if(isset($arResult["OFFERS"]) && !empty($arResult["OFFERS"])):
+//		if($arSetting["OFFERS_VIEW"]["VALUE"] == "LIST"):
+//			if($arResult["TOTAL_OFFERS"]["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"] > 0):
+//				$sticker .= "<span class='discount'>-".$arResult["TOTAL_OFFERS"]["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"]."%</span>";
+//			else:
+//				if(array_key_exists("DISCOUNT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["DISCOUNT"]["VALUE"] == false):
+//					$sticker .= "<span class='discount'>%</span>";
+//				endif;
+//			endif;
+//		endif;
+//	else:
+//		if($arResult["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"] > 0):
+//			$sticker .= "<span class='discount'>-".$arResult["MIN_PRICE"]["DISCOUNT_DIFF_PERCENT"]."%</span>";
+//		else:
+//			if(array_key_exists("DISCOUNT", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["DISCOUNT"]["VALUE"] == false):
+//				$sticker .= "<span class='discount'>%</span>";
+//			endif;
+//		endif;
+//	endif;
 	/***TIME_BUY***/
 	if(array_key_exists("TIME_BUY", $arResult["PROPERTIES"]) && !$arResult["PROPERTIES"]["TIME_BUY"]["VALUE"] == false):
 		if(!empty($arResult["CURRENT_DISCOUNT"]["ACTIVE_TO"])):
