@@ -15,6 +15,16 @@
     display: none !important;
 }
 
+.content-wrapper * {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -khtml-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
 /****************/
 /*  СВОИ СТИЛИ  */
 /****************/
