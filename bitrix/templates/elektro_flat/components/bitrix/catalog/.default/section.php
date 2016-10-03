@@ -130,15 +130,15 @@ endif;
 
 <?/***SORT***/
 $arAvailableSort = array(
-	"default" => Array("sort", "asc"),
+	"default" => Array("NAME", "asc"),
 	"price" => Array("PROPERTY_MINIMUM_PRICE", "asc"),
 	"rating" => Array("PROPERTY_rating", "desc"),
 );
 
-$sort = $APPLICATION->get_cookie("sort") ? $APPLICATION->get_cookie("sort") : "sort";
+$sort = $APPLICATION->get_cookie("sort") ? $APPLICATION->get_cookie("sort") : "NAME";
 
 if($_REQUEST["sort"]) {
-	$sort = "sort";
+	$sort = "NAME";
 	$APPLICATION->set_cookie("sort", $sort);
 } 
 if($_REQUEST["sort"] == "price") {
