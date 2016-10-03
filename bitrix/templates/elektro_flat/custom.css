@@ -1530,3 +1530,13 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .catalog_item_toogle_filter .showfilter i {
     color: #FFFFFF;
 }
+
+/* Оформление системных сообщений */
+.alertMsg.good {
+    border: 1px solid #ef7f1a;
+    background:#ef7f1a;
+    color: #FFFFFF;
+}
+.alertMsg.good .text {
+    color: #FFFFFF;
+}
