@@ -174,6 +174,7 @@ if($_REQUEST["order"] == "desc") {
 </div>
 
 <?/***LIMIT***/
+/*
 $arAvailableLimit = array("12", "48", "900");
 
 $limit = $APPLICATION->get_cookie("limit") ? $APPLICATION->get_cookie("limit") : "12";
@@ -189,6 +190,16 @@ if($_REQUEST["limit"] == "48") {
 if($_REQUEST["limit"] == "900") {
 	$limit = "900";
 	$APPLICATION->set_cookie("limit", $limit);
+}
+*/
+/***APLS LIMIT***/
+$arAvailableLimit = array("12", "24", "48");
+$limit = $APPLICATION->get_cookie("limit") ? $APPLICATION->get_cookie("limit") : "12";
+if($_REQUEST["limit"]) {
+	if($_REQUEST["limit"] <= 50) {
+		$limit = $_REQUEST["limit"];
+		$APPLICATION->set_cookie("limit", $limit);
+	}
 }?>
 
 <div class="catalog-item-limit">
