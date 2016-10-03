@@ -1522,12 +1522,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 
 /* Кнопка показа или скрытия фильтров */
 .catalog_item_toogle_filter .showfilter {
-    text-decoration: none;
     border: 2px solid #ef7f1a;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
     background: #ef7f1a;
     color: #FFFFFF;
 }
