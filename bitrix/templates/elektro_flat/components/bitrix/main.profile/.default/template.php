@@ -23,6 +23,10 @@
 				<input type="text" name="LAST_NAME" maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["LAST_NAME"]?>" />
 				<br><br>
 
+				<?=GetMessage('UF_CARD_NUMBER')?><br>
+				<input type="text" name="UF_CARD_NUMBER" maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["UF_CARD_NUMBER"]?>" />
+				<br><br>
+
 				<?=GetMessage('PERSONAL_PHOTO')?><br>
 				<?if(empty($arResult["arUser"]["PERSONAL_PHOTO"])):?>
 					<input type="file" name="PERSONAL_PHOTO" size="20" class="typefile" />
