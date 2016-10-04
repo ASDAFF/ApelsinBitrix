@@ -28,7 +28,7 @@
 		"OFFERS_LIMIT" => "",
 		"SHOW_PRICE" => "Y",
 		"PRICE_CODE" => array(
-			0 => "BASE"
+			0 => "Розничная цена"
 		),
 		"PRICE_VAT_INCLUDE" => "Y",
 		"SHOW_ADD_TO_CART" => "Y",
