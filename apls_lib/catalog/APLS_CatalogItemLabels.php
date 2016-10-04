@@ -10,10 +10,10 @@ class APLS_CatalogItemLabels
 	private $discountText = array();
 	private $yesValue = array("true", "Y", "Да");
 
-	const NEW_PRODUCT = "NOVINKA";
-	const SALE_LEADER = "KHIT_PRODAZH";
-	const STOCK = "STOCK";
-	const DISCOUNT = "SKIDKA";
+	const NEW_PRODUCT = "NEWPRODUCT";
+	const SALE_LEADER = "SALELEADER";
+	const STOCK = "PROMO";
+	const DISCOUNT = "DISCOUNT";
 
 	private $label = [
 		self::NEW_PRODUCT => [
