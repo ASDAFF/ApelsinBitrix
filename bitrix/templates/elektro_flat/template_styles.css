@@ -4599,6 +4599,11 @@ a.catalog_item_toogle_filter_reset{
 	padding:0px;
 }
 
+.catalog-item-price-view .buy_more button[name="add2basket"] span{
+	display:none;
+	visibility:hidden;
+}
+
 .catalog-item-price-view .buy_more .compare,
 .catalog-item-price-view .buy_more .delay{
 	display:none;

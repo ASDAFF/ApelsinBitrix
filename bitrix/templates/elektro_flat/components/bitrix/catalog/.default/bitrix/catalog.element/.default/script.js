@@ -86,8 +86,7 @@
 			this.params = arParams;
 			this.initConfig();
 
-			switch(this.productType) {
-				case 0:// no catalog
+			switch(this.productType) {				
 				case 1://product
 				case 2://set
 					this.initProductData();
@@ -197,10 +196,9 @@
 		if(!!this.visual.BTN_BUY_ID) {			
 			this.obBuyBtn = BX(this.visual.BTN_BUY_ID);			
 		}
-				
+		
 		if(0 === this.errorCode) {
-			switch(this.productType) {
-				case 0://no catalog
+			switch(this.productType) {				
 				case 1://product
 				case 2://set
 					if(!!this.obSelect) {
@@ -237,8 +235,9 @@
 			}
 		}
 
-		switch(this.productType) {
+		switch(this.productType) {			
 			case 1://product
+			case 2://set
 				if(!!this.obBuyBtn)
 					BX.bind(this.obBuyBtn, "click", BX.delegate(this.Add2Basket, this));
 				break;
@@ -800,8 +799,9 @@
 			}
 		}
 
-		switch(this.productType) {
-			case 1://product			
+		switch(this.productType) {			
+			case 1://product
+			case 2://set			
 				strPictSrc = this.product.pict.SRC;
 				strPictWidth = this.product.pict.WIDTH;
 				strPictHeight = this.product.pict.HEIGHT;
@@ -846,12 +846,12 @@
 	window.JCCatalogElement.prototype.incViewedCounter = function() {
 		if(this.currentIsSet && !this.updateViewedCount) {
 			switch(this.productType) {
-				case 1:
-				case 2:
+				case 1://product
+				case 2://set	
 					this.viewedCounter.params.PRODUCT_ID = this.product.id;
 					this.viewedCounter.params.PARENT_ID = this.product.id;
 					break;
-				case 3:
+				case 3://sku
 					this.viewedCounter.params.PARENT_ID = this.product.id;
 					this.viewedCounter.params.PRODUCT_ID = this.offers[this.offerNum].ID;
 					break;

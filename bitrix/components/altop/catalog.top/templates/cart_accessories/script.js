@@ -163,6 +163,7 @@
 		if(0 === this.errorCode) {
 			switch (this.productType) {
 				case 1://product
+				case 2://set
 					if(!!this.obSelect) {
 						SelectItems = BX.findChildren(this.obSelect, {tagName: 'li'}, true);
 						if(!!SelectItems && 0 < SelectItems.length) {
@@ -199,6 +200,7 @@
 
 		switch(this.productType) {
 			case 1://product
+			case 2://set
 				if(!!this.obBuyBtn)
 					BX.bind(this.obBuyBtn, "click", BX.delegate(this.Add2Basket, this));
 				break;
