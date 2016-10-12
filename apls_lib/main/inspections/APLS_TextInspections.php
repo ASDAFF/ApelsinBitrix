@@ -81,7 +81,7 @@ class APLS_TextInspections
 		) {
 
 			$fioArr = self::getFIOStrinfArray($fioString);
-			return in_array($fName, $fioArr) && in_array($sName, $fioArr);
+			return in_array($fName, $fioArr) && in_array($sName, $fioArr) && in_array($lName, $fioArr);
 		}
 		return false;
 	}
