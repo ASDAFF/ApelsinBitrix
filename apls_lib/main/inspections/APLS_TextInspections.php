@@ -9,6 +9,8 @@
 class APLS_TextInspections
 {
 
+	const CASE_SENSITIVITY = false;
+
 	/**
 	 * fioString в виде массива
 	 * @param $fioString
@@ -41,10 +43,16 @@ class APLS_TextInspections
 	 * @param $fioString
 	 * @param $fName
 	 * @param $sName
+	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIonFIOString($fioString, $fName, $sName)
+	public static function chekFIonFIOString($fioString, $fName, $sName, $caseSensitivity = CASE_SENSITIVITY)
 	{
+		if(!$caseSensitivity) {
+			$fioString = mb_strtolower($fioString);
+			$fName = mb_strtolower($fName);
+			$sName = mb_strtolower($sName);
+		}
 		$fName = APLS_TextGenerator::lettersAndSpaces($fName);
 		$sName = APLS_TextGenerator::lettersAndSpaces($sName);
 		if (
@@ -64,10 +72,17 @@ class APLS_TextInspections
 	 * @param $fName
 	 * @param $sName
 	 * @param $lName
+	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIOonFIOString($fioString, $fName, $sName, $lName)
+	public static function chekFIOonFIOString($fioString, $fName, $sName, $lName, $caseSensitivity = CASE_SENSITIVITY)
 	{
+		if(!$caseSensitivity) {
+			$fioString = mb_strtolower($fioString);
+			$fName = mb_strtolower($fName);
+			$sName = mb_strtolower($sName);
+			$lName = mb_strtolower($lName);
+		}
 		$fName = APLS_TextGenerator::lettersAndSpaces($fName);
 		$sName = APLS_TextGenerator::lettersAndSpaces($sName);
 		$lName = APLS_TextGenerator::lettersAndSpaces($lName);
@@ -94,13 +109,14 @@ class APLS_TextInspections
 	 * @param $fName
 	 * @param $sName
 	 * @param null $lName
+	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIOString($fioString, $fName, $sName, $lName = null) {
+	public static function chekFIOString($fioString, $fName, $sName, $lName = null, $caseSensitivity = CASE_SENSITIVITY) {
 		if(!self::isEmpty($lName)) {
-			return self::chekFIOonFIOString($fioString, $fName, $sName, $lName);
+			return self::chekFIOonFIOString($fioString, $fName, $sName, $lName, $caseSensitivity);
 		} else {
-			return self::chekFIonFIOString($fioString, $fName, $sName);
+			return self::chekFIonFIOString($fioString, $fName, $sName, $caseSensitivity);
 		}
 	}
 }
