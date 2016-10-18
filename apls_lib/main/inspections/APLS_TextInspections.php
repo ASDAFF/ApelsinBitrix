@@ -46,7 +46,7 @@ class APLS_TextInspections
 	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIonFIOString($fioString, $fName, $sName, $caseSensitivity = CASE_SENSITIVITY)
+	public static function chekFIonFIOString($fioString, $fName, $sName, $caseSensitivity = self::CASE_SENSITIVITY)
 	{
 		if(!$caseSensitivity) {
 			$fioString = mb_strtolower($fioString);
@@ -75,7 +75,7 @@ class APLS_TextInspections
 	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIOonFIOString($fioString, $fName, $sName, $lName, $caseSensitivity = CASE_SENSITIVITY)
+	public static function chekFIOonFIOString($fioString, $fName, $sName, $lName, $caseSensitivity = self::CASE_SENSITIVITY)
 	{
 		if(!$caseSensitivity) {
 			$fioString = mb_strtolower($fioString);
@@ -112,7 +112,7 @@ class APLS_TextInspections
 	 * @param $caseSensitivity - учитывать регистр
 	 * @return bool
 	 */
-	public static function chekFIOString($fioString, $fName, $sName, $lName = null, $caseSensitivity = CASE_SENSITIVITY) {
+	public static function chekFIOString($fioString, $fName, $sName, $lName = null, $caseSensitivity = self::CASE_SENSITIVITY) {
 		if(!self::isEmpty($lName)) {
 			return self::chekFIOonFIOString($fioString, $fName, $sName, $lName, $caseSensitivity);
 		} else {
