@@ -141,6 +141,9 @@ function DoIBlockAfterSave($arg1, $arg2 = false) {
 }
 
 // Наш триггер
+require($_SERVER["DOCUMENT_ROOT"]."/apls_lib/main/textgenerator/APLS_TextGenerator.php");
+require($_SERVER["DOCUMENT_ROOT"]."/apls_lib/main/inspections/APLS_TextInspections.php");
 require($_SERVER["DOCUMENT_ROOT"]."/apls_lib/EventHandlers/DoItAfterUpdateElement.php");
+require($_SERVER["DOCUMENT_ROOT"]."/apls_lib/EventHandlers/DoItAfterUpdateUser.php");
 
 ?>

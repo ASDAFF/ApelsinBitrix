@@ -4,6 +4,17 @@
 <?if($arResult['DATA_SAVED'] == 'Y')
 	echo ShowNote(GetMessage('PROFILE_DATA_SAVED'));?>
 
+<!--Вывод ошибки пользователю в случае некорректно введеных данных: имя, фамилия, №карты-->
+<!--Если введеная "комбинация" не существует в БД Контрагенты - ошибка выводится-->
+<?
+	if($arResult["arUser"]["UF_MESSAGE_ERROR"] != null && $arResult["arUser"]["UF_MESSAGE_ERROR"] != "") {
+		if ($arResult["arUser"]["UF_MESSAGE_ERROR"] == "error") {
+			echo ShowNote(GetMessage('MESSAGE_ERROR'));
+		} elseif ($arResult["arUser"]["UF_MESSAGE_ERROR"] == "error1") {
+			echo ShowNote(GetMessage('MESSAGE_ERROR_1'));
+		}
+	}
+?>
 <div class="workarea personal">
 	<form method="post" name="form1" action="<?=$arResult["FORM_TARGET"]?>" enctype="multipart/form-data">
 		<?=$arResult["BX_SESSION_CHECK"]?>
@@ -15,12 +26,12 @@
 		<h2><?=GetMessage("LEGEND_PROFILE")?></h2>
 		<div class="personal-info">
 			<div class="personal-info_in">
-				<?=GetMessage('NAME')?><br>
-				<input type="text" name="NAME" maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["NAME"]?>" />
+				<?=GetMessage('NAME')?><span class="starrequired">*</span><br>
+				<input type="text" name="NAME" required maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["NAME"]?>" />
 				<br><br>
 				
-				<?=GetMessage('LAST_NAME')?><br>
-				<input type="text" name="LAST_NAME" maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["LAST_NAME"]?>" />
+				<?=GetMessage('LAST_NAME')?><span class="starrequired">*</span><br>
+				<input type="text" name="LAST_NAME" required maxlength="50" class="input_text_style" value="<?=$arResult["arUser"]["LAST_NAME"]?>" />
 				<br><br>
 
 				<?=GetMessage('UF_CARD_NUMBER')?><br>

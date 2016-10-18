@@ -13,7 +13,9 @@
 			3 => "UF_CARD_NUMBER",
 		),
 		"REQUIRED_FIELDS" => array(
-			0 => "EMAIL",
+			0 => "NAME",
+			1 => "LAST_NAME",
+			2 => "EMAIL",
 		),
 		"AUTH" => "Y",
 		"USE_BACKURL" => "Y",

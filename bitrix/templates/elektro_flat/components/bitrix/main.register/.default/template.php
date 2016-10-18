@@ -17,13 +17,28 @@
 
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 	die();
+	global $USER_FIELD_MANAGER;
 ?>
 <div class="content-form register-form">
 	<div class="bx-auth-reg">
 
 		<?if($USER->IsAuthorized()):?>
 
-			<p><?echo GetMessage("MAIN_REGISTER_AUTH")?></p>
+<!--			Вывод ошибки пользователю в случае некорректно введеных данных: имя, фамилия, №карты-->
+<!--			Если введеная "комбинация" не существует в БД Контрагенты - ошибка выводится-->
+			<?
+			echo ShowNote(GetMessage('MAIN_REGISTER_AUTH'));
+			$userID = $USER->GetID();
+			$rsUser = CUser::GetByID($userID);
+			$arUser = $rsUser->Fetch();
+			$valueError = $arUser['UF_MESSAGE_ERROR'];
+			if ($valueError != null && $valueError != "")
+				if ($valueError == "error") {
+					echo ShowNote(GetMessage('MESSAGE_ERROR'));
+				} elseif ($valueError == "error1") {
+					echo ShowNote(GetMessage('MESSAGE_ERROR_1'));
+				}
+			?>
 
 		<?else:?>
 			<?
