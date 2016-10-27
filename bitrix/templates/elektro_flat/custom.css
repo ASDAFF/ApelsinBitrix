@@ -287,21 +287,19 @@ table.Stylized tr td img {
 
 /*Доставка*/
 
-
-.ymaps-2-1-42-balloon__content {
+.ymaps-2-1-45-balloon__content {
     padding: 0 !important;
-    /*margin-right: 29px !important;*/
 }
-.ymaps-2-1-42-balloon__close + .ymaps-2-1-42-balloon__content {
+.ymaps-2-1-45-balloon__close + .ymaps-2-1-45-balloon__content {
     margin-right: 0 !important;
 }
-.ymaps-2-1-42-balloon__close {
+.ymaps-2-1-45-balloon__close {
     position: absolute !important;
     right: -5px !important;
     top: -4px !important;
     background: #ef7f1a;
 }
-.ymaps-2-1-42-balloon__close-button {
+.ymaps-2-1-45-balloon__close-button {
     height: 34px !important;
     background: url(../../../apls_resources/icons/delivery/close_white_ymap.png) center center no-repeat !important;
 }
@@ -316,8 +314,6 @@ table.Stylized tr td img {
 .deliveryMap {
     border-collapse: collapse;
     border: none;
-    margin-bottom: 10px;
-    border-right: 1px #edeef8 solid;
 }
 .deliveryMap .lineGrey {
     border-bottom: 2px #e8eaeb solid;
@@ -330,9 +326,10 @@ table.Stylized tr td img {
     margin: 0;
 }
 .deliveryMap td {
-    padding: 3px;
+    padding: 3px 10px;
     text-align: center;
     border-right: 1px #edeef8 solid;
+    white-space: nowrap;
 }
 .deliveryMap td:last-child {
     border: none;
@@ -356,7 +353,7 @@ table.Stylized tr td img {
     width: 50px;
     height: 50px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 .deliveryMapAtTheTime {
     border-top: 1px #edeef8 solid !important;

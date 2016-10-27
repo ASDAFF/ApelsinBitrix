@@ -197,7 +197,8 @@ $APPLICATION->SetTitle("Доставка и подъем");
 				// Ширина обводки.
 				strokeWidth: 1,
 				// Стиль обводки.
-				strokeStyle: 'shortdash'
+				strokeStyle: 'shortdash',
+				balloonMaxWidth: 700,
 			});
 
 			// Создаем многоугольник, используя класс GeoObject.
@@ -306,14 +307,17 @@ $APPLICATION->SetTitle("Доставка и подъем");
 				// Ширина обводки.
 				strokeWidth: 1,
 				// Стиль обводки.
-				strokeStyle: 'shortdash'
+				strokeStyle: 'shortdash',
+				balloonMaxWidth: 700,
 			});
 
 
 			myMap.events.add("click",function(e) {
 				var coords = e.get('coords');
 				myMap.balloon.open(coords, {
-					contentBody: balloonContentZonaThird
+					content: balloonContentZonaThird
+				}, {
+					maxWidth: 700,
 				});
 			});
 
