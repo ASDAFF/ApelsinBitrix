@@ -1303,7 +1303,8 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 
 /* Заголовок всплывающего окна */
 .pop-up .h1, .bx-core-adm-dialog.popup-store .bx-core-adm-dialog-head,
-.popup-set .popup-window-top-row .popup-window-center-column {
+.popup-set .popup-window-top-row .popup-window-center-column,
+.pop-up .popup-window-titlebar {
     background: #ef7f1a;
 }
 
