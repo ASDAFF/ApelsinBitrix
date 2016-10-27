@@ -310,6 +310,7 @@ table.Stylized tr td img {
 }
 .deliveryMapWrapper {
     color: #575b71;
+    font-family:"Open Sans", sans-serif;
 }
 .deliveryMap {
     border-collapse: collapse;

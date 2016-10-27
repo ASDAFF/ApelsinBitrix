@@ -28,23 +28,23 @@ $APPLICATION->SetTitle("Доставка и подъем");
 				'<td><div class="deliveryMapIcon_manipulator deliveryMapTD"></div></td>' +
 				'</tr>' +
 				'<tr>' +
-				'<td>350</td>' +
-				'<td>650</td>' +
-				'<td>1600</td>' +
-				'<td>2000</td>' +
-				'<td>5000</td>' +
-				'<td>2600</td>' +
+				'<td>350 руб.</td>' +
+				'<td>650 руб.</td>' +
+				'<td>1600 руб.</td>' +
+				'<td>2000 руб.</td>' +
+				'<td>5000 руб.</td>' +
+				'<td>2600 руб.</td>' +
 				'</tr>' +
 				'<tr>' +
 				'<th colspan="6"><div class="deliveryMapTitleATTheTime ">Ко времени</div></th>' +
 				'</tr>' +
 				'<tr>' +
-				'<td>500</td>' +
-				'<td>8000</td>' +
-				'<td>2000</td>' +
-				'<td>2500</td>' +
-				'<td>7000</td>' +
-				'<td>3200</td>' +
+				'<td>500 руб.</td>' +
+				'<td>8000 руб.</td>' +
+				'<td>2000 руб.</td>' +
+				'<td>2500 руб.</td>' +
+				'<td>7000 руб.</td>' +
+				'<td>3200 руб.</td>' +
 				'</tr>' +
 				'</table>' +
 				'</div>'+
@@ -66,11 +66,11 @@ $APPLICATION->SetTitle("Доставка и подъем");
 				'<td><div class="deliveryMapIcon_manipulator deliveryMapTD"></div></td>' +
 				'</tr>' +
 				'<tr>' +
-				'<td>700</td>' +
-				'<td>1300</td>' +
-				'<td>3200</td>' +
-				'<td>4000</td>' +
-				'<td>7000</td>' +
+				'<td>700 руб.</td>' +
+				'<td>1300 руб.</td>' +
+				'<td>3200 руб.</td>' +
+				'<td>4000 руб.</td>' +
+				'<td>7000 руб.</td>' +
 				'<td><div class="deliveryMapIcon_phone deliveryMapTD"></td>' +
 				'</tr>' +
 				'</table>' +
