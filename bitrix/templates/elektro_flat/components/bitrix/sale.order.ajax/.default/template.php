@@ -128,8 +128,8 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 				</script>
 			<?}
 
-			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/person_type.php");
-			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props.php");
+			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/summary.php");
+
 			if($arParams["DELIVERY_TO_PAYSYSTEM"] == "p2d") {
 				include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/paysystem.php");
 				include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/delivery.php");
@@ -138,7 +138,8 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 				include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/paysystem.php");
 			}
 
-			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/summary.php");
+			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/person_type.php");
+			include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props.php");
 			
 			if($_POST["is_ajax_post"] != "Y") {?>
 					</div>
