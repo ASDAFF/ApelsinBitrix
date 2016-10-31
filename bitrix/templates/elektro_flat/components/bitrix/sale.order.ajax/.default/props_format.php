@@ -46,6 +46,7 @@ if(!function_exists("showFilePropertyField")) {
 
 if(!function_exists("PrintPropsForm")) {
 	function PrintPropsForm($arSource = array(), $locationTemplate = ".default") {
+		$hiddenPropsId = array("31");
 		if(!empty($arSource)) {
 			foreach($arSource as $arProperties) {?>					
 				<div class="property" data-property-id-row="<?=intval(intval($arProperties["ID"]))?>">
@@ -69,7 +70,9 @@ if(!function_exists("PrintPropsForm")) {
 						<div class="clr"></div>
 					
 					<?} elseif($arProperties["TYPE"] == "TEXT") {?>
-						
+						<?if(in_array($arProperties["ID"], $hiddenPropsId)):?>
+							<input type="hidden" maxlength="250" size="<?=$arProperties["SIZE1"]?>" value="<?=$arProperties["VALUE"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" />
+						<?else:?>
 						<div class="label">
 							<?=$arProperties["NAME"]?>
 							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
@@ -85,7 +88,7 @@ if(!function_exists("PrintPropsForm")) {
 							<?endif;?>
 						</div>
 						<div class="clr"></div>
-					
+						<?endif;?>
 					<?} elseif($arProperties["TYPE"] == "SELECT") {?>
 						
 						<div class="label">

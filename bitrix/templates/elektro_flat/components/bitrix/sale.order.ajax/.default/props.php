@@ -40,6 +40,14 @@ include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");?>
 				<div class="clr"></div>
 			</div>
 		<?}
+		global $USER;
+		$rsUser = CUser::GetList($by="ID", $order="desc", array("ID"=>$USER->GetID()),array("SELECT"=>array("UF_CARD_NUMBER")));
+		$rsUserArr = $rsUser->Fetch();
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["DEFAULT_VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["~DEFAULT_VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["~VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
+		$arResult["ORDER_PROP"]["PRINT"][31]["VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_Y"], $arParams["TEMPLATE_LOCATION"]);
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_N"], $arParams["TEMPLATE_LOCATION"]);
 		PrintPropsForm($arResult["ORDER_PROP"]["RELATED"], $arParams["TEMPLATE_LOCATION"]);?>
