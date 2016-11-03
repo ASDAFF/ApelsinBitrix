@@ -390,7 +390,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<th>свыше 30 км</th>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/truck_1_5.png" alt="грузоподъемность до 1,5т"></td>
+			<td><img src="../apls_resources/icons/delivery/truck_1_5.svg" alt="грузоподъемность до 1,5т"></td>
 			<td>350 руб</td>
 			<td>800 руб</td>
 			<td>900 руб</td>
@@ -398,7 +398,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<td>24 руб/км</td>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/truck_3_5.png" alt="грузоподъемность до 3,5т"></td>
+			<td><img src="../apls_resources/icons/delivery/truck_3_5.svg" alt="грузоподъемность до 3,5т"></td>
 			<td>650 руб</td>
 			<td>1200 руб</td>
 			<td>1200 руб</td>
@@ -406,7 +406,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<td>34 руб/км</td>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/truck_5.png" alt="грузоподъемность до 5т"></td>
+			<td><img src="../apls_resources/icons/delivery/truck_5.svg" alt="грузоподъемность до 5т"></td>
 			<td>1600 руб</td>
 			<td>2100 руб</td>
 			<td>2100 руб</td>
@@ -414,7 +414,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<td>40 руб/км</td>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/truck_10.png" alt="грузоподъемность до 10т"></td>
+			<td><img src="../apls_resources/icons/delivery/truck_10.svg" alt="грузоподъемность до 10т"></td>
 			<td>2000 руб</td>
 			<td>3000 руб</td>
 			<td>2500 руб</td>
@@ -422,7 +422,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<td>60 руб/км</td>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/truck_20.png" alt="грузоподъемность до 20т"></td>
+			<td><img src="../apls_resources/icons/delivery/truck_20.svg" alt="грузоподъемность до 20т"></td>
 			<td>5000 руб</td>
 			<td>7000 руб</td>
 			<td>6000 руб</td>
@@ -430,7 +430,7 @@ $APPLICATION->SetTitle("Доставка и подъем");
 			<td>100 руб/км</td>
 		</tr>
 		<tr>
-			<td><img src="../apls_resources/icons/delivery/manipulator.png" alt="манипулятор"></td>
+			<td><img src="../apls_resources/icons/delivery/manipulator.svg" alt="манипулятор"></td>
 			<td>2600 руб</td>
 			<td><div class="deliveryMapIcon_phone deliveryMapTD"></td>
 			<td>3600 руб</td>
