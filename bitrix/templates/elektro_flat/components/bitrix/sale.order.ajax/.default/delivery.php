@@ -198,7 +198,7 @@
 											<td valign="top">												
 												<div class="name">
 													<?=htmlspecialcharsbx($arDelivery["NAME"])?>
-												</div>												
+												</div>
 												<p>
 													<?if(strlen($arDelivery["PERIOD_TEXT"])>0):
 														echo $arDelivery["PERIOD_TEXT"]."<br />";
