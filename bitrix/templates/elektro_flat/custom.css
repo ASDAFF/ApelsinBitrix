@@ -1550,3 +1550,8 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .alertMsg.good .text {
     color: #FFFFFF;
 }
+
+/* оформление заказа */
+.bx-core-adm-dialog.popup-store table#store_table td.image {
+    display: none;
+}
