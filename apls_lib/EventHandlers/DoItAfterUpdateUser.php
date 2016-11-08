@@ -23,6 +23,7 @@
 		const AVERAGE_WHOLESALE_GROUP = "9";    // средний опт
 		const WHOLESALE_GROUP = "10";           // опт
 		const BIG_WHOLESALE_GROUP = "11";       // крупный опт
+		const SMALL_WHOLESALE_1C = "86157e22-e56b-11dc-8b6b-000e0c431b58";      // мелкий опт (1с тип цен)
 
 		private $arTypePriceGroups = [
 			self::SMALL_WHOLESALE_GROUP,
@@ -82,16 +83,21 @@
 						$this->typePrice = $this->dataUser["UF_OSNOVNOYTIPTSEN"];
 						$this->newGroupID = $this->arTypePrice[$this->typePrice];
 						$this->editFieldValue("UF_MESSAGE_ERROR");
+						$this->editFieldValue("UF_1C_TYPE_PRICE", $this->typePrice);
 					// если нет - ошибка ввода данных
 					} else {
 						$this->editFieldValue("UF_MESSAGE_ERROR", "error");
 						$this->editFieldValue("UF_CARD_NUMBER");
+						$this->editFieldValue("UF_1C_TYPE_PRICE", self::SMALL_WHOLESALE_1C);
 					}
 				// если используется - ошибка номер занят
 				} else {
 					$this->editFieldValue("UF_MESSAGE_ERROR", "error1");
 					$this->editFieldValue("UF_CARD_NUMBER");
+					$this->editFieldValue("UF_1C_TYPE_PRICE", self::SMALL_WHOLESALE_1C);
 				}
+			} else {
+				$this->editFieldValue("UF_1C_TYPE_PRICE", self::SMALL_WHOLESALE_1C);
 			}
 			// прмиеняем данные
 			$this->editDataUser();
