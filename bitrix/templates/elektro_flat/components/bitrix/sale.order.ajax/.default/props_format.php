@@ -46,7 +46,7 @@ if(!function_exists("showFilePropertyField")) {
 
 if(!function_exists("PrintPropsForm")) {
 	function PrintPropsForm($arSource = array(), $locationTemplate = ".default") {
-		$hiddenPropsId = array("31");
+		$hiddenPropsId = array("31","32");
 		if(!empty($arSource)) {
 			foreach($arSource as $arProperties) {?>					
 				<div class="property" data-property-id-row="<?=intval(intval($arProperties["ID"]))?>">

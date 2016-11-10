@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-
+define("DEFAULT_PRICE_TYPE_FOR_1C_ORDER","86157e22-e56b-11dc-8b6b-000e0c431b58");
 include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");?>
 
 <h2><?=GetMessage("SOA_TEMPL_PROP_INFO")?></h2>
@@ -41,13 +41,23 @@ include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");?>
 			</div>
 		<?}
 		global $USER;
-		$rsUser = CUser::GetList($by="ID", $order="desc", array("ID"=>$USER->GetID()),array("SELECT"=>array("UF_CARD_NUMBER")));
+		$rsUser = CUser::GetList($by="ID", $order="desc", array("ID"=>$USER->GetID()),array("SELECT"=>array("UF_CARD_NUMBER","UF_1C_TYPE_PRICE")));
 		$rsUserArr = $rsUser->Fetch();
+		if($rsUserArr["UF_1C_TYPE_PRICE"] == "") {
+			$rsUserArr["UF_1C_TYPE_PRICE"] = DEFAULT_PRICE_TYPE_FOR_1C_ORDER;
+		}
+		// пробрасываем номер карты
 		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["DEFAULT_VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
 		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["~DEFAULT_VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
 		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
 		$arResult["ORDER_PROP"]["USER_PROPS_N"][31]["~VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
 		$arResult["ORDER_PROP"]["PRINT"][31]["VALUE"] = $rsUserArr["UF_CARD_NUMBER"];
+		// пробрасываем тип цен
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][32]["DEFAULT_VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][32]["~DEFAULT_VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][32]["VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
+		$arResult["ORDER_PROP"]["USER_PROPS_N"][32]["~VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
+		$arResult["ORDER_PROP"]["PRINT"][32]["VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_Y"], $arParams["TEMPLATE_LOCATION"]);
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_N"], $arParams["TEMPLATE_LOCATION"]);
 		PrintPropsForm($arResult["ORDER_PROP"]["RELATED"], $arParams["TEMPLATE_LOCATION"]);?>
