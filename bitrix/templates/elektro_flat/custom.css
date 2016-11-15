@@ -847,6 +847,10 @@ a.catalog_item_toogle_filter_hidden, a.catalog_item_toogle_filter_reset {
     transition: all 0s;
 }
 
+.filter form table tr td .sect_name .sect_text span {
+    font-size: 12px;
+}
+
 /* сортировка */
 .catalog-item-sorting a:hover, .catalog-item-limit a:hover {
     color: #ffffff;
