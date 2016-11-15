@@ -831,6 +831,10 @@ ul.left-menu > li.parent > ul.submenu, ul.left-menu > li.parent > .catalog-secti
     border-radius: 0;
 }
 
+.custom-forms label.disabled, .custom-forms.active label.disabled {
+    display: none;
+}
+
 .catalog_item_toogle_filter .showfilter span:hover,
 .filter form table tr td .sect_name:hover .sect_text span,
 a.catalog_item_toogle_filter_hidden:hover, a.catalog_item_toogle_filter_reset:hover {
