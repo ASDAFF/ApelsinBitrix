@@ -855,7 +855,48 @@ a.catalog_item_toogle_filter_hidden, a.catalog_item_toogle_filter_reset {
     font-size: 12px;
 }
 
-/* сортировка */
+.filter.vertical form table tr td .bx_filter_container_modef_popup {
+
+}
+.filter form table tr td .bx_filter_popup {
+    border: 1px solid #ef7f1a;
+    background: #ef7f1a;
+    color: #FFFFFF;
+    padding: 10px 10px;
+}
+.filter.vertical form table tr td .bx_filter_popup:before {
+    border-left: none;
+    border-right: 9px solid #ef7f1a;
+    border-right: none !important;
+}
+.filter.vertical form table tr td .bx_filter_popup:after {
+    border-left: none;
+    border-right: 10px solid #ef7f1a;
+    left: -10px;
+}
+.filter form table tr td .bx_filter_popup a,
+.filter form table tr td .bx_filter_popup a:visited {
+    border: 1px #FFFFFF solid;
+    padding: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.filter form table tr td .bx_filter_popup a:hover {
+    text-decoration: none;
+    background: #FFFFFF;
+    color: #ef7f1a;
+}
+.filter form table tr td .bx_filter_popup #modef_popup_num {
+    display: inline-block;
+    font-size: 14px;
+    padding: 1px 5px;
+    min-width: 16px;
+    background: #FFFFFF;
+    color: #ef7f1a;
+    text-align: center;
+}
+
+    /* сортировка */
 .catalog-item-sorting a:hover, .catalog-item-limit a:hover {
     color: #ffffff;
     border: 1px solid #ef7f1a;
