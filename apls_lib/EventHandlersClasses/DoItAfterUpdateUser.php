@@ -34,7 +34,7 @@ class DoItAfterUpdateUser
 		self::AVERAGE_WHOLESALE_GROUP,
 		self::WHOLESALE_GROUP,
 		self::BIG_WHOLESALE_GROUP
-	];
+	];                                      // массив соответствия содержащий ID групп пользователя
 
 	private $arTypePrice = [
 		"86157e22-e56b-11dc-8b6b-000e0c431b58" => self::SMALL_WHOLESALE_GROUP,
@@ -55,11 +55,14 @@ class DoItAfterUpdateUser
 		$this->dataUsersField = $rsUser->Fetch();
 	}
 
+	/**
+	 * Основная фукция обновления данных пользователя
+	 */
 	public function updateUser()
 	{
 		// если номер карты введен
 		if (isset($this->dataUsersField["UF_CARD_NUMBER"]) && $this->dataUsersField["UF_CARD_NUMBER"] != "") {
-			// проверка - номер уже используется?
+			// проверка номера карты на дубликат
 			if (!$this->issetNumberCard()) {
 				// получаем данные о контрагентах
 				$dataContractor = $this->getDataUserHLBl();
@@ -96,7 +99,7 @@ class DoItAfterUpdateUser
 				);
 				$this->addUpdateDate(self::USER_FIELD_TYPE_KEY, $update);
 			}
-		} else {  // если номера карты не введен
+		} else {  // если номер карты не введен
 			// включаем пользователя в группу "Мелкий опт"
 			// заносим соответствующий тип цен
 			$update = Array(
@@ -112,8 +115,12 @@ class DoItAfterUpdateUser
 		$this->executeUpdate();
 	}
 
+	/**
+	 * Выполняем обновление всех изменяемых данных пользователя
+	 */
 	private function executeUpdate()
 	{
+		// данные по полям
 		$this->unsetDuplicateData(self::USER_FIELD_TYPE_KEY, "UF_MESSAGE_ERROR");
 		$this->unsetDuplicateData(self::USER_FIELD_TYPE_KEY, "UF_1C_TYPE_PRICE");
 		if (
@@ -122,6 +129,7 @@ class DoItAfterUpdateUser
 		) {
 			$this->APLS_USER->Update($this->userID, $this->updateData[self::USER_FIELD_TYPE_KEY]);
 		}
+		// данные по группам
 		if (
 			isset($this->updateData[self::USER_GROUP_TYPE_KEY]) &&
 			!empty($this->updateData[self::USER_GROUP_TYPE_KEY])
@@ -133,6 +141,11 @@ class DoItAfterUpdateUser
 		}
 	}
 
+	/**
+	 * Редактирование массива измениений (оставляем только ИЗМЕНЯЕМЫЕ данные)
+	 * @param $type - тип данных
+	 * @param $key - поле
+	 */
 	private function unsetDuplicateData($type, $key)
 	{
 		if (
@@ -143,11 +156,21 @@ class DoItAfterUpdateUser
 		}
 	}
 
+	/**
+	 * Фактически получаем ID группы по типу цены для пользоватля
+	 * @param $typePrice
+	 * @return string
+	 */
 	private function getUserPriceType($typePrice)
 	{
 		return isset($this->arTypePrice[$typePrice]) ? $typePrice : self::DEFAULT_PRICE_TYPE_FOR_REGISTR_USER;
 	}
 
+	/**
+	 * Страхуемся на случай вознкновения неизвестного типа цены
+	 * @param $typePrice
+	 * @return mixed|string
+	 */
 	private function getUserGroup($typePrice)
 	{
 		return isset($this->arTypePrice[$typePrice]) ?
@@ -155,18 +178,26 @@ class DoItAfterUpdateUser
 			self::DEFAULT_USER_GROUP_FOR_REGISTR_USER;
 	}
 
+	/**
+	 * Подготавливаем данные о группах пользователя для Update
+	 */
 	private function groupDataUpdate()
 	{
 		// Данные о текущих группах пользователя
 		$arCurrentGroup = CUser::GetUserGroup($this->userID);
+		// данные о нужных группах пользователя
 		if (!isset($this->groupID) || $this->groupID === self::DEFAULT_USER_GROUP_FOR_REGISTR_USER) {
 			$newUserGroup = array(self::DEFAULT_USER_GROUP_FOR_REGISTR_USER);
 		} else {
 			$newUserGroup = array($this->groupID, self::DEFAULT_USER_GROUP_FOR_REGISTR_USER);
 		}
+		// удаляем из массива соответствий типов цен нужные группы
 		$groupArr = array_diff($this->arTypePriceGroups, $newUserGroup);
+		// соединяем нужные с текущими группами пользователя
 		$newUserGroupArr = array_unique(array_merge($arCurrentGroup, $newUserGroup));
+		// удаляем, если они были, другие "ценовые" группы у пользователя
 		$newUserGroupArr = array_diff($newUserGroupArr, $groupArr);
+		// заносим в массив изменений
 		if (
 			!empty(array_diff($arCurrentGroup, $newUserGroupArr)) ||
 			!empty(array_diff($newUserGroupArr, $arCurrentGroup))
@@ -176,6 +207,7 @@ class DoItAfterUpdateUser
 	}
 
 	/**
+	 * Генерирование массива изменений
 	 * @param $type - USER_FIELD_TYPE_KEY | USER_GROUP_TYPE_KEY
 	 * @param array $date - массив с данными формата key => value
 	 */
@@ -189,7 +221,7 @@ class DoItAfterUpdateUser
 	}
 
 	/**
-	 * Пооверка наличия XML_ID у пользователя
+	 * Пооверка наличия (и генерирования при необходимости) XML_ID у пользователя
 	 */
 	private function checkXML_ID()
 	{
@@ -202,7 +234,7 @@ class DoItAfterUpdateUser
 	}
 
 	/**
-	 * Получить данные о всех пользователях
+	 * Получить данные о всех контрагентах
 	 * @return array|false
 	 */
 	public function getDataUserHLBl()
