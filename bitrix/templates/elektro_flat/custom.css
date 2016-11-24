@@ -735,6 +735,9 @@ table.Stylized tr td img {
 .catalog-detail .catalog-detail-preview-text {
     display: none;
 }
+.article_rating .rating {
+    display: none;
+}
 
 /*Реквизиты товара*/
 .productDetails {
