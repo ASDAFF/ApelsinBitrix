@@ -20,7 +20,8 @@ $popupParams["MESS"] = array(
 	"MFT_EMAIL" => GetMessage("MFT_BOC_EMAIL"),
 	"MFT_MESSAGE" => GetMessage("MFT_BOC_MESSAGE"),
 	"MFT_CAPTCHA" => GetMessage("MFT_BOC_CAPTCHA"),
-	"MFT_BUY" => GetMessage("MFT_BOC_BUY")
+	"MFT_BUY" => GetMessage("MFT_BOC_BUY"),
+	"MFT_BOC_DESCRIPTION" => GetMessage("MFT_BOC_DESCRIPTION")
 );?>
 
 <script type="text/javascript">	

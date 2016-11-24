@@ -18,6 +18,7 @@ $arMessage = $_REQUEST["arParams"]["MESS"];?>
 
 <form action="<?=$form_action?>" id="bocForm-<?=$element_id?>" class="boc-form">	
 	<span id="echoBocForm-<?=$element_id?>" class="echo-boc-form"></span>
+	<div class="row MFT_BOC_DESCRIPTION"><?=$arMessage["MFT_BOC_DESCRIPTION"]?></div>
 	<div class="row">
 		<div class="span1">
 			<?=$arMessage["MFT_NAME"]?><?if(empty($arParams["REQUIRED_ORDER_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_ORDER_FIELDS"])):?><span class="mf-req">*</span><?endif?>

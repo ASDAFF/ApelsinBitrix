@@ -52,6 +52,7 @@ $select_prop_div = $_REQUEST["arParams"]["SELECT_PROP_DIV"];
 	</div>
 	<form action="<?=$form_action?>" id="bocForm-<?=$arParams['ELEMENT_CODE'].$element_id?>" class="boc-form">
 		<span id="echoBocForm-<?=$arParams['ELEMENT_CODE'].$element_id?>" class="echo-boc-form"></span>
+		<div class="row MFT_BOC_DESCRIPTION"><?=$arMessage["MFT_BOC_DESCRIPTION"]?></div>
 		<div class="row">
 			<div class="span1">
 				<?=$arMessage["MFT_NAME"]?><?if(empty($arParams["REQUIRED_ORDER_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_ORDER_FIELDS"])):?><span class="mf-req">*</span><?endif?>
