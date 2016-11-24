@@ -732,6 +732,9 @@ table.Stylized tr td img {
 /*Каталог*/
 
 /*Карточка товара*/
+.catalog-detail .catalog-detail-preview-text {
+    display: none;
+}
 
 /*Реквизиты товара*/
 .productDetails {
