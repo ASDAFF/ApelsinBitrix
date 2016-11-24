@@ -1604,3 +1604,12 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .bx-core-adm-dialog.popup-store table#store_table td.image {
     display: none;
 }
+.bx-core-adm-dialog {
+    overflow: visible;
+}
+
+    /* войти как | соцсети */
+.login-form .login_as,
+.sale_order_full_table .login_as {
+    display: none;
+}
