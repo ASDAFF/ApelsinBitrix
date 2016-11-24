@@ -7,6 +7,7 @@ if(strlen($arResult["ERROR_MESSAGE"])>0)
 
 if(count($arResult["STORES"]) > 0):
 	foreach($arResult["STORES"] as $pid => $arProperty):?>
+		<?if($arProperty["AMOUNT"] > 0):?>
 		<div class="catalog-detail-store">			
 			<span class="name">
 				<?=$arProperty["TITLE"].(isset($arProperty["PHONE"]) ? GetMessage("S_PHONE").$arProperty["PHONE"] : "").(isset($arProperty["SCHEDULE"]) ? GetMessage("S_SCHEDULE").$arProperty["SCHEDULE"] : "");?>
@@ -14,5 +15,6 @@ if(count($arResult["STORES"]) > 0):
 			</span>
 			<span class="val"><?=$arProperty["AMOUNT"]?></span>
 		</div>
+		<?endif;?>
 	<?endforeach;
 endif;?>
