@@ -1611,7 +1611,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     display: none;
 }
 .bx-core-adm-dialog {
-    overflow: visible;
+    overflow: visible !important;
 }
 
     /* войти как | соцсети */
