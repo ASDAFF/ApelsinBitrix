@@ -1,16 +1,16 @@
 <?
 $MESS['SOA_TEMPL_PERSON_TYPE'] = "Тип плательщика";
 $MESS['SOA_TEMPL_BUTTON'] = "Оформить заказ";
-$MESS['SOA_TEMPL_PROP_INFO'] = "Информация для оплаты и доставки заказа";
+$MESS['SOA_TEMPL_PROP_INFO'] = "Информация";
 $MESS['SOA_TEMPL_PROP_CHOOSE'] = "Выберите профиль:";
 $MESS['SOA_TEMPL_EXISTING_PROFILE'] = "Профиль покупателя:";
 $MESS['SOA_TEMPL_PROP_NEW_PROFILE'] = "Новый профиль";
-$MESS['SOA_TEMPL_PAY_SYSTEM'] = "Платежная система";
+$MESS['SOA_TEMPL_PAY_SYSTEM'] = "Оплата";
 $MESS['SOA_TEMPL_PAY_ACCOUNT'] = "Оплатить с внутреннего счета";
 $MESS['SOA_TEMPL_PAY_ACCOUNT1'] = "На вашем пользовательском счете есть";
 $MESS['SOA_TEMPL_PAY_ACCOUNT2'] = "Вы можете использовать для полного или частичного погашения суммы заказа.";
 $MESS['SOA_TEMPL_PAY_ACCOUNT3'] = "Средств достаточно для полной оплаты заказа.";
-$MESS['SOA_TEMPL_DELIVERY'] = "Служба доставки";
+$MESS['SOA_TEMPL_DELIVERY'] = "Доставка";
 $MESS['SOA_TEMPL_ORDER_SUC'] = "Ваш заказ <b>№#ORDER_ID#</b> от #ORDER_DATE# успешно создан.";
 $MESS['SOA_TEMPL_ORDER_SUC1'] = "Вы можете следить за выполнением своего заказа в <a href=\"#LINK#\">Персональном разделе сайта</a>. Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта.";
 $MESS['SOA_TEMPL_PAY'] = "Оплата заказа";
