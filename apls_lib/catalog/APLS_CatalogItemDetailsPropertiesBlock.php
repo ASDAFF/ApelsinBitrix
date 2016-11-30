@@ -49,16 +49,20 @@ class APLS_CatalogItemDetailsPropertiesBlock {
 
     private function generationBlockProductDetails() {
         $this->html .= "<div class='productDetailsWrapper advantages'>";
-        foreach ($this->dataProductDetails as $value) {
-            $cssStyleIcon = $value['PROPERTY_CSSICON_VALUE'];
-	        $adres = $value['PROPERTY_ADRESS_VALUE'];
-            $this->html .= "<div class='productDetails'>";
-                $this->html .= '<a class="productDetailsIcons fa '.$cssStyleIcon .'" href="'.$adres.'">';
-                $this->html .= "</a>";
+	    if (!empty($this->dataProductDetails)) {
+		    $this->html .= "<div class='availableServices'>Доступные услуги:</div>";
+		    foreach ($this->dataProductDetails as $value) {
+			    $cssStyleIcon = $value['PROPERTY_CSSICON_VALUE'];
+			    $adres = $value['PROPERTY_ADRESS_VALUE'];
+			    $this->html .= "<div class='productDetails'>";
+			    $this->html .= '<a class="productDetailsIcons fa '.$cssStyleIcon .'" href="'.$adres.'">';
+			    $this->html .= "</a>";
 //                $this->html .= "<div class='productDetailsText adv-text'>".$value['PROPERTY_TEXT_VALUE']."</div>";
-                $this->html .= "<div class='clear'></div>";
-            $this->html .= "</div>";
-        }
+			    $this->html .= "<div class='clear'></div>";
+			    $this->html .= "</div>";
+		    }
+
+	    }
         $this->html .= "</div>";
     }
 }

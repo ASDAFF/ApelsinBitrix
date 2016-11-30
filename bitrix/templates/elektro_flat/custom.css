@@ -749,15 +749,10 @@ table.Stylized tr td img {
     margin-right: 7px;
     cursor: pointer;
 }
-/*Стили для иконок*/
-.fa.novinka_icon {
-    background: url(./icon/novinka_icon.png) center center no-repeat;
+.availableServices {
+    font-size: 12px;
+    color: #a0a4bc;
 }
-.fa.aktsiya_icon {
-    background: url(./icon/novinka_icon.png) center center no-repeat;
-}
-
-
 
 
 /**********************/

@@ -342,7 +342,6 @@ endif;
 					$APLS_Action = new APLS_CatalogItemDetailsAction($arResult["PROPERTIES"]);
 					$APLS_Action->getAction();
 					?>
-					<div class='productDetailsWrapper advantages'>Дополнительные реквизиты товара будут здесь</div>
 				</div>
 				<div class="column four">
 					<div class="price_buy_detail" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
