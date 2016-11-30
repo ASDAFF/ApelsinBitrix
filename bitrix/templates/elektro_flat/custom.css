@@ -1777,3 +1777,8 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .sale_order_full_table .login_as {
     display: none;
 }
+
+.custom-forms label {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
