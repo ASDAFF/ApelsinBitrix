@@ -60,7 +60,9 @@ include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");?>
 		$arResult["ORDER_PROP"]["PRINT"][32]["VALUE"] = $rsUserArr["UF_1C_TYPE_PRICE"];
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_Y"], $arParams["TEMPLATE_LOCATION"]);
 		PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_N"], $arParams["TEMPLATE_LOCATION"]);
-		PrintPropsForm($arResult["ORDER_PROP"]["RELATED"], $arParams["TEMPLATE_LOCATION"]);?>
+		include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/adress_map.php");
+		PrintPropsForm($arResult["ORDER_PROP"]["RELATED"], $arParams["TEMPLATE_LOCATION"]);
+		?>
 	</div>
 </div>
 

@@ -125,7 +125,7 @@
 	<input type="hidden" name="BUYER_STORE" id="BUYER_STORE" value="<?=$arResult["BUYER_STORE"]?>" />
 	<h2><?=GetMessage("SOA_TEMPL_DELIVERY")?></h2>
 	<div class="order-info">
-		<div class="order-info_in">
+		<div class="order-info_in order-info_in_table">
 			<table>
 				<?$width = ($arParams["SHOW_STORES_IMAGES"] == "Y") ? 800 : 750;
 				foreach($arResult["DELIVERY"] as $delivery_id => $arDelivery):
@@ -184,8 +184,9 @@
 								else:
 									$clickHandler = "onClick = \"submitForm();\"";
 								endif;?>
-								<input type="radio" id="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>" name="<?=htmlspecialcharsbx($arDelivery["FIELD_NAME"])?>" value="<?=$arDelivery["ID"]?>"<?if($arDelivery["CHECKED"]=="Y") echo " checked";?> <?=$clickHandler?>/>
-							</td>
+								<input type="radio" class="radio" id="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>" name="<?=htmlspecialcharsbx($arDelivery["FIELD_NAME"])?>" value="<?=$arDelivery["ID"]?>"<?if($arDelivery["CHECKED"]=="Y") echo " checked";?> <?=$clickHandler?>/>
+                                <label for="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>"></label>
+                            </td>
 							<td valign="top">
 								<label for="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>" onclick="BX('ID_DELIVERY_ID_<?=$arDelivery["ID"]?>').checked=true;submitForm();">
 									<table>
@@ -204,10 +205,10 @@
 														echo $arDelivery["PERIOD_TEXT"]."<br />";
 													endif;
 													if(DoubleVal($arDelivery["PRICE"]) > 0):
-														echo GetMessage("SALE_DELIV_PRICE")." ".$arDelivery["PRICE_FORMATED"].($arSetting["REFERENCE_PRICE"]["VALUE"] == "Y" && !empty($arSetting["REFERENCE_PRICE_COEF"]["VALUE"]) ? " (".CCurrencyLang::CurrencyFormat($arDelivery["PRICE"] * $arSetting["REFERENCE_PRICE_COEF"]["VALUE"], $arDelivery["CURRENCY"], true).")" : "")."<br />";
+														echo "<span class='sale_delivery_price'>".GetMessage("SALE_DELIV_PRICE")." ".$arDelivery["PRICE_FORMATED"].($arSetting["REFERENCE_PRICE"]["VALUE"] == "Y" && !empty($arSetting["REFERENCE_PRICE_COEF"]["VALUE"]) ? " (".CCurrencyLang::CurrencyFormat($arDelivery["PRICE"] * $arSetting["REFERENCE_PRICE_COEF"]["VALUE"], $arDelivery["CURRENCY"], true).")" : "")."</span><br />";
 													endif;
 													if(strlen($arDelivery["DESCRIPTION"])>0):
-														echo $arDelivery["DESCRIPTION"]."<br />";
+														echo $arDelivery["DESCRIPTION"];
 													endif;
 													if(count($arDelivery["STORE"]) > 0):?>
 														<span id="select_store"<?if(strlen($arResult["STORE_LIST"][$arResult["BUYER_STORE"]]["TITLE"]) <= 0) echo " style=\"display:none;\"";?>>

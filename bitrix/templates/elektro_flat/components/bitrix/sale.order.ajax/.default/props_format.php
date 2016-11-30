@@ -73,14 +73,17 @@ if(!function_exists("PrintPropsForm")) {
 						<?if(in_array($arProperties["ID"], $hiddenPropsId)):?>
 							<input type="hidden" maxlength="250" size="<?=$arProperties["SIZE1"]?>" value="<?=$arProperties["VALUE"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" />
 						<?else:?>
-						<div class="label">
-							<?=$arProperties["NAME"]?>
+<!--						<div class="label">-->
+<!--							--><?//=$arProperties["NAME"]?>
+<!--							--><?//if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+<!--								<span class="star">*</span>-->
+<!--							--><?//endif;?>
+<!--						</div>-->
+						<div class="block">
+							<input type="text" maxlength="250" size="<?=$arProperties["SIZE1"]?>" value="<?=$arProperties["VALUE"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" placeholder="<?=$arProperties["NAME"]?>" />
 							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
 								<span class="star">*</span>
 							<?endif;?>
-						</div>
-						<div class="block">
-							<input type="text" maxlength="250" size="<?=$arProperties["SIZE1"]?>" value="<?=$arProperties["VALUE"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" />
 							<?if(strlen(trim($arProperties["DESCRIPTION"])) > 0):?>
 								<div class="description">
 									<?=$arProperties["DESCRIPTION"]?>
@@ -91,18 +94,21 @@ if(!function_exists("PrintPropsForm")) {
 						<?endif;?>
 					<?} elseif($arProperties["TYPE"] == "SELECT") {?>
 						
-						<div class="label">
-							<?=$arProperties["NAME"]?>
-							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
-								<span class="star">*</span>
-							<?endif;?>
-						</div>
+<!--						<div class="label">-->
+<!--							--><?//=$arProperties["NAME"]?>
+<!--							--><?//if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+<!--								<span class="star">*</span>-->
+<!--							--><?//endif;?>
+<!--						</div>-->
 						<div class="block">
 							<select name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" size="<?=$arProperties["SIZE1"]?>">
 								<?foreach($arProperties["VARIANTS"] as $arVariants):?>
 									<option value="<?=$arVariants["VALUE"]?>"<?if ($arVariants["SELECTED"] == "Y") echo " selected";?>><?=$arVariants["NAME"]?></option>
 								<?endforeach;?>
 							</select>
+							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+								<span class="star">*</span>
+							<?endif;?>
 							<?if(strlen(trim($arProperties["DESCRIPTION"])) > 0):?>
 								<div class="description">
 									<?=$arProperties["DESCRIPTION"]?>
@@ -135,14 +141,17 @@ if(!function_exists("PrintPropsForm")) {
 					
 					<?} elseif($arProperties["TYPE"] == "TEXTAREA") {?>
 						
-						<div class="label">
-							<?=$arProperties["NAME"]?>
+<!--						<div class="label">-->
+<!--							--><?//=$arProperties["NAME"]?>
+<!--							--><?//if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+<!--								<span class="star">*</span>-->
+<!--							--><?//endif;?>
+<!--						</div>-->
+						<div class="block">
+							<textarea rows="<?=$arProperties["SIZE2"]?>" cols="<?=$arProperties["SIZE1"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>" placeholder="<?=$arProperties["NAME"]?>" ><?=$arProperties["VALUE"]?></textarea>
 							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
 								<span class="star">*</span>
 							<?endif;?>
-						</div>
-						<div class="block">
-							<textarea rows="<?=$arProperties["SIZE2"]?>" cols="<?=$arProperties["SIZE1"]?>" name="<?=$arProperties["FIELD_NAME"]?>" id="<?=$arProperties["FIELD_NAME"]?>"><?=$arProperties["VALUE"]?></textarea>
 							<?if(strlen(trim($arProperties["DESCRIPTION"])) > 0):?>
 								<div class="description">
 									<?=$arProperties["DESCRIPTION"]?>
@@ -153,12 +162,12 @@ if(!function_exists("PrintPropsForm")) {
 					
 					<?} elseif($arProperties["TYPE"] == "LOCATION") {?>
 						
-						<div class="label">
-							<?=$arProperties["NAME"]?>
-							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
-								<span class="star">*</span>
-							<?endif;?>
-						</div>
+<!--						<div class="label">-->
+<!--							--><?//=$arProperties["NAME"]?>
+<!--							--><?//if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+<!--								<span class="star">*</span>-->
+<!--							--><?//endif;?>
+<!--						</div>-->
 						<div class="block">
 							<?$value = 0;
 							if(is_array($arProperties["VARIANTS"]) && count($arProperties["VARIANTS"]) > 0) {
@@ -207,6 +216,9 @@ if(!function_exists("PrintPropsForm")) {
 								true,
 								'location-block-wrapper'
 							)?>
+							<?if($arProperties["REQUIED_FORMATED"]=="Y"):?>
+								<span class="star">*</span>
+							<?endif;?>
 							<?if(strlen(trim($arProperties["DESCRIPTION"])) > 0):?>
 								<div class="description">
 									<?=$arProperties["DESCRIPTION"]?>

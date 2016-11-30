@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <h2><?=GetMessage("SOA_TEMPL_PAY_SYSTEM")?></h2>
 <div class="order-info">
-	<div class="order-info_in">
+	<div class="order-info_in order-info_in_table">
 		<table>
 			<?if($arResult["PAY_FROM_ACCOUNT"]=="Y") {?>
 				<tr>
@@ -48,7 +48,8 @@
 				<? } else { ?>
 					<tr>
 						<td valign="top">
-							<input type="radio" id="ID_PAY_SYSTEM_ID_<?= $arPaySystem["ID"] ?>" name="PAY_SYSTEM_ID" value="<?= $arPaySystem["ID"] ?>"<?if ($arPaySystem["CHECKED"]=="Y") echo " checked=\"checked\"";?> onclick="submitForm();">
+							<input type="radio" class="radio" id="ID_PAY_SYSTEM_ID_<?= $arPaySystem["ID"] ?>" name="PAY_SYSTEM_ID" value="<?= $arPaySystem["ID"] ?>"<?if ($arPaySystem["CHECKED"]=="Y") echo " checked=\"checked\"";?> onclick="submitForm();">
+							<label for="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>"></label>
 						</td>
 						<td valign="top">
 							<label for="ID_PAY_SYSTEM_ID_<?=$arPaySystem["ID"]?>" onclick="BX('ID_PAY_SYSTEM_ID_<?=$arPaySystem["ID"]?>').checked=true;submitForm();">

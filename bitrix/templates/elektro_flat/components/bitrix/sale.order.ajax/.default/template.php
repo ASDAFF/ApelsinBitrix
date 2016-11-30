@@ -81,6 +81,29 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 					return true;
 				}
 
+				function APLS_hideAdresInput() {
+					$("#ORDER_PROP_26").hide();
+					$("#ORDER_PROP_27").hide();
+					$("#ORDER_PROP_28").hide();
+				}
+
+				function APLS_showAdresInput() {
+					$("#ORDER_PROP_26").show();
+					$("#ORDER_PROP_27").show();
+					$("#ORDER_PROP_28").show();
+				}
+
+				function APLS_checkAdresInput() {
+					var input1 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[2][11]']" );
+					var input2 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[8][12]']" );
+					var input3 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[9][13]']" );
+					if($(input1).is(":checked") || $(input2).is(":checked") || $(input3).is(":checked")) {
+						APLS_showAdresInput();
+					} else {
+						APLS_hideAdresInput();
+					}
+				}
+
 				function ajaxResult(res) {
 					var orderForm = BX('ORDER_FORM');
 					try {
@@ -104,6 +127,13 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 
 					BX.closeWait();
 					BX.onCustomEvent(orderForm, 'onAjaxSuccess');
+					APLS_checkAdresInput();
+					if($("input").is("#ORDER_PROP_21")) {
+						$("#apls_adress_map").show();
+						ymaps.ready(init);
+					} else {
+						$("#apls_adress_map").hide();
+					}
 				}
 
 				function SetContact(profileId) {

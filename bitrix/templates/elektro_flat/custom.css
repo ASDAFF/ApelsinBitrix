@@ -1613,8 +1613,166 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .bx-core-adm-dialog {
     overflow: visible !important;
 }
+.myorders .person_type, .myorders .order-info, .personal .personal-info {
+    border-top: none;
+}
+.order-info #select_store>.select_store {
+    font-weight: bolder;
+}
+.order-info #select_store>.ora-store {
+    font-weight: bolder;
+    color: #ef7f1a;
+}
+.order-info .sale_delivery_price {
+    font-weight: bolder;
+}
+.order-info .order-info_in.order-info_in_table {
+    padding: 0;
+    border: none;
+}
+.order-info .order-info_in>table {
+    border-collapse:collapse;
+    border: none;
+    margin: 0px;
+}
+.order-info .order-info_in>table tr:hover {
+    background: #f7f7f7;
+    cursor: pointer !important;
+}
+.order-info .order-info_in.order-info_in_table td {
+    vertical-align: middle;
+}
+.order-info .order-info_in.order-info_in_table td>div{
+    text-align: justify;
+}
+.order-info .order-info_in.order-info_in_table td.name{
+    color: #8184a1;
+    font: bolder 13px/13px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+}
+.order-info .order-info_in>table>tbody>tr>td:first-child {
+    width: 40px;
+}
+.order-info .order-info_in>table>tbody>tr>td:last-child {
+    padding-right: 25px;
+}
+.order-info .order-info_in>table>tbody>tr>td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #edeef8;
+}
+.order-info .order-info_in>table>tbody>tr:last-child>td {
+    border-bottom: none;
+}
 
-    /* войти как | соцсети */
+#order_form_content.myorders h2,
+#order_form_content.personal h2 {
+    margin: 0 !important;
+}
+#order_form_content.myorders h2 + .cart-items .equipment-order,
+#order_form_content.personal h2 + .cart-items .equipment-order {
+    margin-top: 2px;
+}
+#order_form_content.myorders .cart-items .equipment-order .tr,
+#order_form_content.personal .cart-items .equipment-order .tr {
+    border-top: none;
+    margin: 0;
+}
+.cart-items .equipment .tbody .myorders_itog,
+.cart-items .equipment-order .myorders_itog {
+    border-top: none !important;
+    margin: 0 !important;
+}
+.order-info .order-info_in .block {
+    position: relative;
+}
+.order-info .order-info_in .block span.star {
+    color: #d26b0f;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font: 16px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    position: absolute;
+    top: 10px;
+}
+.location-block-wrapper {
+    display: inline-block;
+}
+.myorders .order-info .dropdown-block {
+    margin: 0;
+}
+.order-info .order-info_in .block select {
+    width: 319px;
+}
+
+.radio {
+    vertical-align: top;
+    width: 17px;
+    height: 17px;
+    margin: 0 3px 0 0;
+    display: none;
+}
+.radio + label {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+
+}
+.radio:not(checked) {
+    position: absolute;
+}
+.radio:not(checked) + label {
+    position: relative;
+}
+.radio:not(checked) + label:before {
+    font-weight: bolder;
+    content: '✖';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background: #edeef8;
+    background: transparent;
+    font: 16px/22px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    color: #8184a1;
+    text-align: center;
+}
+
+.radio:checked + label:before {
+    /*display: none;*/
+    content: '✔';
+    color: #ef7f1a;
+}
+.radio:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(239,127,26,.5);
+}
+
+.order-info .order-info_in>table tr:hover .radio:not(checked) + label:before {
+    content: '✔';
+}
+
+#apls_adress_map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    display: none;
+}
+#apls_adress_map .ymaps-2-1-45-copyrights-pane,
+#apls_adress_map .ymaps-2-1-45-controls__control,
+#apls_adress_map .ymaps-2-1-45-controls__bottom,
+#apls_adress_map .ymaps-2-1-45-controls-pane{
+    display: none;
+}
+.delivery_extra_services {
+    margin-left: 90px;
+}
+.delivery_extra_services .name {
+    text-align: right;
+}
+
+/* войти как | соцсети */
 .login-form .login_as,
 .sale_order_full_table .login_as {
     display: none;
