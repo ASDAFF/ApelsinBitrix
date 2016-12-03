@@ -34,13 +34,17 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 		"ELEMENT_SORT_ORDER" => "desc",
 		"ELEMENT_SORT_FIELD2" => "",
 		"ELEMENT_SORT_ORDER2" => "",
-		"LIST_PROPERTY_CODE" => array(),
+		"LIST_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"USE_MAIN_ELEMENT_SECTION" => "Y",
 		"LIST_META_KEYWORDS" => "UF_KEYWORDS",
 		"LIST_META_DESCRIPTION" => "UF_META_DESCRIPTION",
 		"LIST_BROWSER_TITLE" => "UF_BROWSER_TITLE",
-		"DETAIL_PROPERTY_CODE" => array(),
+		"DETAIL_PROPERTY_CODE" => array(
+		),
 		"DETAIL_META_KEYWORDS" => "-",
 		"DETAIL_META_DESCRIPTION" => "-",
 		"DETAIL_BROWSER_TITLE" => "-",
@@ -118,7 +122,8 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 			26 => "USER_NAME",
 			27 => "",
 		),
-		"COMPARE_PROPERTY_CODE" => array(),
+		"COMPARE_PROPERTY_CODE" => array(
+		),
 		"COMPARE_OFFERS_FIELD_CODE" => array(
 			0 => "",
 			1 => "",
@@ -181,7 +186,8 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 			26 => "USER_NAME",
 			27 => "",
 		),
-		"FILTER_PROPERTY_CODE" => array(),
+		"FILTER_PROPERTY_CODE" => array(
+		),
 		"FILTER_PRICE_CODE" => array(
 			0 => "Розничная цена",
 		),
@@ -240,7 +246,10 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 			0 => "",
 			1 => "",
 		),
-		"FIELDS" => array(),
+		"FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SHOW_EMPTY_STORE" => "N",
 		"SHOW_GENERAL_STORE_INFORMATION" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
