@@ -7,8 +7,8 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 ?>
 
 <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
-	".default", 
+	"bitrix:catalog",
+	".default",
 	array(
 		"PATH_TO_SHIPPING" => "/delivery/",
 		"DISPLAY_IMG_WIDTH" => "178",
