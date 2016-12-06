@@ -822,8 +822,15 @@ ul.left-menu > li.parent > ul.submenu, ul.left-menu > li.parent > .catalog-secti
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
+ul.left-menu > li#id253 > a {
+    font-size: 10px;
+}
+ul.left-menu > li#id342 > a {
+    font-size: 11px;
+}
 
-/* умный фильтр слева */
+
+    /* умный фильтр слева */
 .catalog_item_toogle_filter .showfilter,
 .filter {
     -moz-border-radius: 0;
