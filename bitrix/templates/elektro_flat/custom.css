@@ -25,6 +25,16 @@
     border-radius: 0 !important;
 }
 
+a#feedback-button.atlwdg-trigger.atlwdg-SUBTLE {
+    right: 3px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #d26b0f !important;
+    color: #fff !important;
+    padding: 10px 25px;
+    text-transform: uppercase !important;
+}
+
 /****************/
 /*  СВОИ СТИЛИ  */
 /****************/
@@ -822,11 +832,8 @@ ul.left-menu > li.parent > ul.submenu, ul.left-menu > li.parent > .catalog-secti
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
-ul.left-menu > li#id253 > a {
-    font-size: 10px;
-}
-ul.left-menu > li#id342 > a {
-    font-size: 11px;
+ul.left-menu > li > a {
+    font-size: 10px !important;
 }
 
 

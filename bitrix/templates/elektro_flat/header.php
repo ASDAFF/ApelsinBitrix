@@ -58,6 +58,7 @@ IncludeTemplateLangFile(__FILE__);?>
 	$APPLICATION->ShowHead();?>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
+	<a href="#" id="feedback-button" class="atlwdg-trigger atlwdg-SUBTLE">Сообщить об ошибке</a>
 	<?global $arSetting;?>
 	<?$arSetting = $APPLICATION->IncludeComponent("altop:settings", "", array(), false, array("HIDE_ICONS" => "Y"));?>	
 	<div class="bx-panel<?=($arSetting['CART_LOCATION']['VALUE'] == 'TOP') ? ' clvt' : ''?>">
@@ -436,6 +437,7 @@ IncludeTemplateLangFile(__FILE__);?>
 								<?endif;?>
 								<div class="clr"></div>
 							<?endif;?>
+
 							<div class="body_text" style="<?=($APPLICATION->GetCurPage(true) == SITE_DIR.'index.php') ? 'padding:0px 15px;' : 'padding:0px;';?>">
 								<?if($APPLICATION->GetCurPage(true)!= SITE_DIR."index.php"):?>
 									<div class="breadcrumb-search">
@@ -457,4 +459,32 @@ IncludeTemplateLangFile(__FILE__);?>
 										<div class="clr"></div>
 									</div>
 									<h1><?=$APPLICATION->ShowTitle(false);?></h1>
-								<?endif;?>		
+								<?endif;?>
+								<script type="text/javascript" src="http://jira.compuproject.com/s/ac00d99ae309ce302e93eaa22bfc31d8-T/-e0dbtr/72006/b6b48b2829824b869586ac216d119363/2.0.22/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=ru-RU&collectorId=563bf4ab"></script>
+								<script type="text/javascript">
+									var breadcrumb_path = "";
+									var breadcrumb_size = $('.breadcrumb .breadcrumb__item').size();
+									$('.breadcrumb .breadcrumb__item').each(function(i,elem) {
+										if(i < breadcrumb_size - 1) {
+											breadcrumb_path = breadcrumb_path + $(elem).text() + " | ";
+										} else {
+											breadcrumb_path = breadcrumb_path + $(elem).text();
+										}
+									});
+									window.ATL_JQ_PAGE_PROPS =  {
+										"triggerFunction": function(showCollectorDialog) {
+											//Requires that jQuery is available!
+											jQuery("#feedback-button").click(function(e) {
+												e.preventDefault();
+												showCollectorDialog();
+											});
+										},
+										fieldValues : {
+											summary : "",
+											description : "",
+											priority : '3',
+											"customfield_10201" : "<?$APPLICATION->ShowTitle()?>",
+											"customfield_10202" : breadcrumb_path,
+											"customfield_10203" : "<?echo "http://".$_SERVER['SERVER_NAME'].$APPLICATION->GetCurUri("",false)?>"
+										}};
+								</script>
