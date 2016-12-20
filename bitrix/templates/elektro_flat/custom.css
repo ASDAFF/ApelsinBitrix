@@ -34,6 +34,36 @@ a#feedback-button.atlwdg-trigger.atlwdg-SUBTLE {
     padding: 10px 25px;
     text-transform: uppercase !important;
 }
+.jira-button {
+    /*display: inline-block;*/
+    /*display: -moz-inline-stack;*/
+    height: 48px;
+    display: table;
+    float: right;
+    margin: 0px;
+    padding: 0px 14px 0px 15px;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    border-left: 1px solid rgba(0,0,0,0.05) !important;
+}
+.jira-button .fa-jira {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px !important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: none !important;
+}
+.fa-jira:before {
+    content: "\f071";
+    content: "\f188";
+    box-shadow: none !important;
+}
+.jira-button:hover {
+    background: #ffffff !important;
+    color: #f18c32 !important;
+}
 
 /****************/
 /*  СВОИ СТИЛИ  */
@@ -297,7 +327,6 @@ table.Stylized tr td img {
 }
 
 /*Доставка*/
-
 .ymaps-2-1-45-balloon__content {
     padding: 0 !important;
 }

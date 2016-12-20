@@ -186,7 +186,8 @@ IncludeTemplateLangFile(__FILE__);?>
 									),
 									false,
 									array("HIDE_ICONS" => "Y")
-								);?>								
+								);?>
+								<a href="#" id="feedback-button" class="jira-button" title="Сообщить об ошибке"><i class="fa fa-jira"></i></a>
 							</div>
 						</div>
 					</div>

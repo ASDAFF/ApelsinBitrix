@@ -58,7 +58,6 @@ IncludeTemplateLangFile(__FILE__);?>
 	$APPLICATION->ShowHead();?>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
-	<a href="#" id="feedback-button" class="atlwdg-trigger atlwdg-SUBTLE">Сообщить об ошибке</a>
 	<?global $arSetting;?>
 	<?$arSetting = $APPLICATION->IncludeComponent("altop:settings", "", array(), false, array("HIDE_ICONS" => "Y"));?>	
 	<div class="bx-panel<?=($arSetting['CART_LOCATION']['VALUE'] == 'TOP') ? ' clvt' : ''?>">
