@@ -10,6 +10,11 @@
  - темносиний: #575b71
 */
 
+button[disabled] {
+    color: #a0a4bc !important;
+    background: #edeef8 !important;
+}
+
 .style-switcher,
 .style-switcher > div{
     display: none !important;

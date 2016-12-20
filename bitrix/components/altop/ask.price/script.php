@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 	$REQUIRED = array();
 	$REQUIRED = explode("/", $_POST["REQUIRED"]);
 
-	//Проверка заполненности Имени
+	//РџСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚Рё РРјРµРЅРё
 	if(empty($REQUIRED) || in_array("NAME", $REQUIRED)) {
 		if(!isset($_POST["NAME"]) || !strlen($_POST["NAME"])) {
 			$error .= GetMessage("NAME_NOT_FILLED")."<br>";
@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 		}
 	}	
 
-	//Проверка заполненности Телефона
+	//РџСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚Рё РўРµР»РµС„РѕРЅР°
 	if(empty($REQUIRED) || in_array("TEL", $REQUIRED)) {
 		if(!isset($_POST["TEL"]) || !strlen($_POST["TEL"])) {
 			$error .= GetMessage("TEL_NOT_FILLED")."<br>";
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 		}
 	}
 
-	//Проверка заполненности Времени звонка
+	//РџСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚Рё Р’СЂРµРјРµРЅРё Р·РІРѕРЅРєР°
 	if(empty($REQUIRED) || in_array("TIME", $REQUIRED)) {
 		if(!isset($_POST["TIME"]) || !strlen($_POST["TIME"])) {
 			$error .= GetMessage("TIME_NOT_FILLED")."<br>";
@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 		}
 	}
 
-	//Проверка заполненности Вопроса
+	//РџСЂРѕРІРµСЂРєР° Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚Рё Р’РѕРїСЂРѕСЃР°
 	if(empty($REQUIRED) || in_array("MESSAGE", $REQUIRED)) {
 		if(!isset($_POST["MESSAGE"]) || !strlen($_POST["MESSAGE"])) {
 			$error .= GetMessage("MESSAGE_NOT_FILLED")."<br>";
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 	}
 
 	if(!$USER->IsAuthorized()) {
-		//Затираем значение введенной капчи
+		//Р—Р°С‚РёСЂР°РµРј Р·РЅР°С‡РµРЅРёРµ РІРІРµРґРµРЅРЅРѕР№ РєР°РїС‡Рё
 		if($_POST["FORM_NAME"] == "ASKPRICE") {
 			echo "<script>BX.adjust(BX('askPriceCaptchaWord-".$_POST["ELEMENT_ID"]."'), {props: {value: ''}});</script>";
 		} elseif($_POST["FORM_NAME"] == "ORDER") {
@@ -52,9 +52,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 		}
 	}
 
-	//Если есть ошибки, то выдаем текст ошибки
+	//Р•СЃР»Рё РµСЃС‚СЊ РѕС€РёР±РєРё, С‚Рѕ РІС‹РґР°РµРј С‚РµРєСЃС‚ РѕС€РёР±РєРё
 	if($return == true) {
-		//обновляем капчу
+		//РѕР±РЅРѕРІР»СЏРµРј РєР°РїС‡Сѓ
 	    if(!$USER->IsAuthorized()) {
     		$cCode = $APPLICATION->CaptchaGetCode();
 			if($_POST["FORM_NAME"] == "ASKPRICE") {
@@ -67,14 +67,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
         return;
     }
 
-	// В случае ошибки, заполненные поля сохраняют свои значения
+	// Р’ СЃР»СѓС‡Р°Рµ РѕС€РёР±РєРё, Р·Р°РїРѕР»РЅРµРЅРЅС‹Рµ РїРѕР»СЏ СЃРѕС…СЂР°РЅСЏСЋС‚ СЃРІРѕРё Р·РЅР°С‡РµРЅРёСЏ
     $_POST["NAME"]		= iconv("UTF-8", SITE_CHARSET, strip_tags(trim($_POST["NAME"])));    
 	$_POST["TEL"]		= iconv("UTF-8", SITE_CHARSET, strip_tags(trim($_POST["TEL"])));
 	$_POST["TIME"]		= iconv("UTF-8", SITE_CHARSET, strip_tags(trim($_POST["TIME"])));
 	$_POST["MESSAGE"]	= iconv("UTF-8", SITE_CHARSET, strip_tags(trim($_POST["MESSAGE"])));
 	
 	
-	//Отправка письма
+	//РћС‚РїСЂР°РІРєР° РїРёСЃСЊРјР°
 	$headers = "From: ".$_POST["EMAIL_TO"]."\r\n";
 	$headers .= "Content-type: text/plain; charset=KOI8-R\r\n";
 	$headers .= "Mime-Version: 1.0\r\n";
@@ -106,5 +106,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["FORM_NAME"] == "ASKPRICE" ||
 		} elseif($_POST["FORM_NAME"] == "ORDER") {			
 			echo "<script>BX.adjust(BX('orderSendButton-".$_POST["ELEMENT_ID"]."'), {props: {disabled: true}});</script>";
 		}
+	} else {
+        echo "<span class='alertMsg bad'><i class='fa fa-times'></i><span class='text'>".GetMessage("MF_NO_MESSAGE")."</span></span>";
+        
+        if($_POST["FORM_NAME"] == "ASKPRICE") {
+            echo "<script>BX.adjust(BX('askPriceSendButton-".$_POST["ELEMENT_ID"]."'), {props: {disabled: true}});</script>";
+        } elseif($_POST["FORM_NAME"] == "ORDER") {
+            echo "<script>BX.adjust(BX('orderSendButton-".$_POST["ELEMENT_ID"]."'), {props: {disabled: true}});</script>";
+        }
 	}
 }?>
