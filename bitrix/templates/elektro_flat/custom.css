@@ -1833,13 +1833,19 @@ ul.left-menu > li > a {
 .cart-items .equipment-order.list .thead .cart-item-status{
     width:155px;
 }
+.cart-items .equipment-order.detail .thead .cart-item-status {
+    width: 155px;
+}
 .cart-items .equipment-order.list .tbody .cart-item-status span.item-status-a {
     font-weight:700;
     color:#688123;
 }
 .cart-items .equipment-order.list .tbody .cart-item-status{
      width:150px;
- }
+}
+.cart-items .equipment-order.detail .tbody .cart-item-status {
+    width: 150px;
+}
 .cart-item-payment a {
     border: 2px solid #ef7f1a;
     background: #FFFFFF;

@@ -170,21 +170,29 @@ if(strlen($arResult["ERROR_MESSAGE"])<=0):?>
 	
 	<table class="order-recipient">
 		<?if(!empty($arResult["ORDER_PROPS"])) {
-			foreach($arResult["ORDER_PROPS"] as $val) {?>
-				<tr>
-					<td class="field-name"><?echo $val["NAME"] ?>:</td>
-					<td class="field-value">
-						<?if($val["TYPE"] == "CHECKBOX") {
-							if($val["VALUE"] == "Y")
-								echo GetMessage("SALE_YES");
-							else
-								echo GetMessage("SALE_NO");
-						} else {
-							echo $val["VALUE"];
-						}?>
-					</td>
-				</tr>
-			<?}
+			foreach($arResult["ORDER_PROPS"] as $val) {
+
+				if (
+					$val["NAME"] != "Тип цен клиента" &&
+					!($val["NAME"] == "Наличие лифта" && $val["VALUE"] == "Нет лифта")
+				) {
+					?>
+					<tr>
+						<td class="field-name"><?echo $val["NAME"] ?>:</td>
+						<td class="field-value">
+							<?if($val["TYPE"] == "CHECKBOX") {
+								if($val["VALUE"] == "Y")
+									echo GetMessage("SALE_YES");
+								else
+									echo GetMessage("SALE_NO");
+							} else {
+								echo $val["VALUE"];
+							}?>
+						</td>
+					</tr>
+				    <?
+				}
+			}
 		}?>
 		<?if(strlen($arResult["USER_DESCRIPTION"])>0):?>
 			<tr>

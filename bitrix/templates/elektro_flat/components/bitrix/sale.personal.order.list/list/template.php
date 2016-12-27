@@ -200,21 +200,31 @@ else
 
 								<table class="order-recipient <?=$accountHashNumber?>" style="display:none;">
 									<?if(!empty($val["ORDER"]["ORDER_PROPS"])) {										
-										foreach($val["ORDER"]["ORDER_PROPS"] as $orderProps) {?>
-											<tr>
-												<td class="field-name"><?=$orderProps["NAME"]?>:</td>
-												<td class="field-value">
-													<?if($orderProps["TYPE"] == "CHECKBOX") {
-														if($orderProps["VALUE"] == "Y")
-															echo GetMessage("STPOL_YES");
-														else
-															echo GetMessage("STPOL_NO");
-													} else {
-														echo $orderProps["VALUE"];
-													}?>
-												</td>
-											</tr>
-										<?}
+										foreach($val["ORDER"]["ORDER_PROPS"] as $orderProps) {
+
+
+
+											if (
+												$orderProps["NAME"] != "Тип цен клиента" &&
+												!($orderProps["NAME"] == "Наличие лифта" && $orderProps["VALUE"] == "Нет лифта")
+											) {
+												?>
+												<tr>
+													<td class="field-name"><?=$orderProps["NAME"]?>:</td>
+													<td class="field-value">
+														<?if($orderProps["TYPE"] == "CHECKBOX") {
+															if($orderProps["VALUE"] == "Y")
+																echo GetMessage("STPOL_YES");
+															else
+																echo GetMessage("STPOL_NO");
+														} else {
+															echo $orderProps["VALUE"];
+														}?>
+													</td>
+												</tr>
+												<?
+											}
+										}
 									}?>
 									<?if(strlen($val["ORDER"]["USER_DESCRIPTION"])>0):?>
 										<tr>
