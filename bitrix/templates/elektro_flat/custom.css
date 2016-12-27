@@ -1828,3 +1828,44 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 ul.left-menu > li > a {
     font-size: 12px;
 }
+
+/* Мои заказы */
+.cart-items .equipment-order.list .thead .cart-item-status{
+    width:155px;
+}
+.cart-items .equipment-order.list .tbody .cart-item-status span.item-status-a {
+    font-weight:700;
+    color:#688123;
+}
+.cart-items .equipment-order.list .tbody .cart-item-status{
+     width:150px;
+ }
+.cart-item-payment a {
+    border: 2px solid #ef7f1a;
+    background: #FFFFFF;
+    color: #ef7f1a !important;
+    display: block;
+    text-decoration: none !important;
+    text-transform: lowercase;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    padding: 0 5px;
+    width: 90px;
+    text-align: center;
+    margin-top: 10px;
+}
+.cart-item-payment a:hover {
+    border: 2px solid #ef7f1a;
+    background: #ef7f1a;
+    color: #FFFFFF !important;
+}
+.notetext p a {
+    color: #ef7f1a;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.notetext p a:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}

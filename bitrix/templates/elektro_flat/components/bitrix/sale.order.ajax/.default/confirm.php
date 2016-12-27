@@ -16,7 +16,9 @@
 					<script language="JavaScript">
 						window.open('<?=$arParams["PATH_TO_PAYMENT"]?>?ORDER_ID=<?=$arResult["ACCOUNT_NUMBER"]?>');
 					</script>
+					<!--
 					<p><?=GetMessage("SOA_TEMPL_PAY_LINK", Array("#LINK#" => $arParams["PATH_TO_PAYMENT"]."?ORDER_ID=".$arResult["ACCOUNT_NUMBER"]))?></p>
+					-->
 				<?} else {
 					if(strlen($arResult["PAY_SYSTEM"]["PATH_TO_ACTION"])>0) {
 						include($arResult["PAY_SYSTEM"]["PATH_TO_ACTION"]);

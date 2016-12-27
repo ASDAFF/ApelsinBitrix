@@ -64,10 +64,10 @@ else
 									</div>
 									<div class="cart-item-payment">
 										<?if(IntVal($val["ORDER"]["PAY_SYSTEM_ID"]) > 0):
-											echo $arResult["INFO"]["PAY_SYSTEM"][$val["ORDER"]["PAY_SYSTEM_ID"]]["NAME"];			
-											if(isset($val["ORDER"]["PSA_ACTION_FILE"]) && !empty($val["ORDER"]["PSA_ACTION_FILE"])):?>
+											echo $arResult["INFO"]["PAY_SYSTEM"][$val["ORDER"]["PAY_SYSTEM_ID"]]["NAME"];
+											if($val["ORDER"]["STATUS_ID"]=="A" && isset($val["ORDER"]["PSA_ACTION_FILE"]) && !empty($val["ORDER"]["PSA_ACTION_FILE"])):?>
 												<br />
-												<a href="<?=$val["ORDER"]["PSA_ACTION_FILE"]?>" target="_blank"><?=GetMessage("STPOL_REPEAT_PAY")?></a>
+												<a href="<?=$val["ORDER"]["PSA_ACTION_FILE"]?>&GOTOPAY=yes" target="_blank"><?=GetMessage("STPOL_REPEAT_PAY")?></a>
 											<?endif;
 										else:
 											echo GetMessage("STPOL_NONE");
