@@ -186,7 +186,7 @@ include_once $_SERVER["DOCUMENT_ROOT"]."/apls_lib/catalog/APLS_CatalogItemLabels
 			25 => "TIMESTAMP_X",
 			26 => "MODIFIED_BY",
 			27 => "USER_NAME",
-			28 => "",
+			28 => " ",
 		),
 		"FILTER_PROPERTY_CODE" => array(
 		),
