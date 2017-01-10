@@ -32,6 +32,7 @@ class APLS_CatalogItemDetailsPropertiesBlock {
         $arFilter = Array("IBLOCK_ID"=>$this->idBlock, "ACTIVE"=>"Y");
         $arSelect = Array(
             "CODE",
+	        "NAME",
             "PROPERTY_SEQUENCE",
             "PROPERTY_TEXT",
 	        "PROPERTY_ADRESS",
@@ -53,8 +54,9 @@ class APLS_CatalogItemDetailsPropertiesBlock {
 		    $this->html .= "<div class='availableServices'>Доступные услуги:</div>";
 		    foreach ($this->dataProductDetails as $value) {
 			    $cssStyleIcon = $value['PROPERTY_CSSICON_VALUE'];
+			    $title = $value['NAME'];
 			    $adres = $value['PROPERTY_ADRESS_VALUE'];
-			    $this->html .= "<div class='productDetails'>";
+			    $this->html .= "<div class='productDetails' title='".$title."'>";
 			    $this->html .= '<a class="productDetailsIcons fa '.$cssStyleIcon .'" href="'.$adres.'">';
 			    $this->html .= "</a>";
 //                $this->html .= "<div class='productDetailsText adv-text'>".$value['PROPERTY_TEXT_VALUE']."</div>";
