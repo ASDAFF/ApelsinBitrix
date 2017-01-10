@@ -103,6 +103,18 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 						APLS_hideAdresInput();
 					}
 				}
+				
+				function APLS_updateDeleveryFormInput() {
+					APLS_checkAdresInput();
+					if($("input").is("#ORDER_PROP_21")) {
+						$("#apls_adress_map").show();
+						ymaps.ready(init);
+					} else {
+						$("#apls_adress_map").hide();
+					}
+				}
+
+				$( document ).ready(APLS_updateDeleveryFormInput);
 
 				function ajaxResult(res) {
 					var orderForm = BX('ORDER_FORM');
@@ -127,13 +139,7 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 
 					BX.closeWait();
 					BX.onCustomEvent(orderForm, 'onAjaxSuccess');
-					APLS_checkAdresInput();
-					if($("input").is("#ORDER_PROP_21")) {
-						$("#apls_adress_map").show();
-						ymaps.ready(init);
-					} else {
-						$("#apls_adress_map").hide();
-					}
+					APLS_updateDeleveryFormInput();
 				}
 
 				function SetContact(profileId) {

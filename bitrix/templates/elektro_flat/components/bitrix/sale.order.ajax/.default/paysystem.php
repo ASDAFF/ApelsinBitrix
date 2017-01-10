@@ -49,7 +49,7 @@
 					<tr>
 						<td valign="top">
 							<input type="radio" class="radio" id="ID_PAY_SYSTEM_ID_<?= $arPaySystem["ID"] ?>" name="PAY_SYSTEM_ID" value="<?= $arPaySystem["ID"] ?>"<?if ($arPaySystem["CHECKED"]=="Y") echo " checked=\"checked\"";?> onclick="submitForm();">
-							<label for="ID_DELIVERY_ID_<?=$arDelivery["ID"]?>"></label>
+							<label for="ID_PAY_SYSTEM_ID_<?=$arPaySystem["ID"]?>"></label>
 						</td>
 						<td valign="top">
 							<label for="ID_PAY_SYSTEM_ID_<?=$arPaySystem["ID"]?>" onclick="BX('ID_PAY_SYSTEM_ID_<?=$arPaySystem["ID"]?>').checked=true;submitForm();">
