@@ -1875,3 +1875,39 @@ ul.left-menu > li > a {
     text-decoration: underline !important;
     cursor: pointer;
 }
+
+
+/* Кол-во товара на складе */
+#catalog-detail-stores-from .catalog-detail-store {
+    border: 1px solid #e0e3e7;
+}
+#catalog-detail-stores-from .catalog-detail-store .store {
+    width: 550px;
+}
+#catalog-detail-stores-from .catalog-detail-store .adres {
+    margin: auto 0;
+}
+#catalog-detail-stores-from .catalog-detail-store .store,
+#catalog-detail-stores-from .catalog-detail-store .store .title,
+#catalog-detail-stores-from .catalog-detail-store .store .phone,
+#catalog-detail-stores-from .catalog-detail-store .adres {
+    float: left;
+}
+
+#catalog-detail-stores-from .catalog-detail-store .store .title,
+#catalog-detail-stores-from .catalog-detail-store .store .phone,
+#catalog-detail-stores-from .catalog-detail-store .adres,
+#catalog-detail-stores-from .catalog-detail-store .amount {
+    padding: 5px;
+}
+#catalog-detail-stores-from .catalog-detail-store .amount {
+    float: right;
+    margin: auto 0;
+}
+#catalog-detail-stores-from .catalog-detail-store:hover {
+    border: 1px solid #ef7f1a;
+    cursor: pointer;
+}
+#catalog-detail-stores-from .catalog-detail-store a {
+    color: #a0a4bc;
+}
