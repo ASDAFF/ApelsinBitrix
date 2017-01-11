@@ -1911,3 +1911,25 @@ ul.left-menu > li > a {
 #catalog-detail-stores-from .catalog-detail-store a {
     color: #a0a4bc;
 }
+
+/* Страница Спасибо за покупку */
+.wrapperPageFinalPayment {
+    margin-top: 10px;
+}
+.pageFinalPayment {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+.myOrder,
+.myCatalog {
+    padding: 5px 7px;
+    float: left;
+}
+.myOrder {
+    margin-right: 10px;
+}
+.myCatalog {}
+.pageFinalPaymentOrderNunber {
+    color: #ef7f1a;
+}
