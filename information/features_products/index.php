@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Особенности товаров");
 	<p class="TextP">Уважаемые покупатели, для Вашего удобства все товары имеющие ограничения или особенности в предоставлении услуг отмечены специальными значками:</p>
 
 	<div class="FeaturesProductsWrapper">
-		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/truck_long.png">
+		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/truck_long.svg">
 		<div class="FeaturesProductsTextBlock">
 			<div class="FeaturesProductsName">Длинномер</div>
 			<div class="FeaturesProductsText">
@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Особенности товаров");
 	</div>
 
 	<div class="FeaturesProductsWrapper">
-		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/manipulator.png">
+		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/manipulator.svg">
 		<div class="FeaturesProductsTextBlock">
 			<div class="FeaturesProductsName">Манипулятор</div>
 			<div class="FeaturesProductsText">
@@ -27,7 +27,7 @@ $APPLICATION->SetTitle("Особенности товаров");
 	</div>
 
 	<div class="FeaturesProductsWrapper">
-		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/climb.png">
+		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/climb.svg">
 		<div class="FeaturesProductsTextBlock">
 			<div class="FeaturesProductsName">Спеццена подъема</div>
 			<div class="FeaturesProductsText">
@@ -38,7 +38,7 @@ $APPLICATION->SetTitle("Особенности товаров");
 	</div>
 
 	<div class="FeaturesProductsWrapper">
-		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/assembling.png">
+		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/assembling.svg">
 		<div class="FeaturesProductsTextBlock">
 			<div class="FeaturesProductsName">Установка / Монтаж</div>
 			<div class="FeaturesProductsText">
@@ -49,7 +49,7 @@ $APPLICATION->SetTitle("Особенности товаров");
 	</div>
 
 	<div class="FeaturesProductsWrapper">
-		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/color.png">
+		<img class="FeaturesProductsIconBlock" class src="../../apls_resources/icons/delivery/color.svg">
 		<div class="FeaturesProductsTextBlock">
 			<div class="FeaturesProductsName">Колеровка</div>
 			<div class="FeaturesProductsText">
