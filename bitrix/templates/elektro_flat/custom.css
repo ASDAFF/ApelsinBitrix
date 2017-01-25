@@ -9,7 +9,11 @@
  - черный: #363224
  - темносиний: #575b71
 */
-
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    /*font-style: italic;*/
+}
 button[disabled] {
     color: #a0a4bc !important;
     background: #edeef8 !important;
