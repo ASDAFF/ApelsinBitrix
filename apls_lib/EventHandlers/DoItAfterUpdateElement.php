@@ -13,18 +13,20 @@ function DoItAfterUpdateElement (&$arFields) {
 		if($obRes = $rs->GetNextElement())
 		{
 			$arRes = $obRes->GetFields();
+            $el = new CIBlockElement;
 			$arRes["PROPERTIES"] = $obRes->GetProperties();
 			foreach ($arRes["PROPERTIES"] as $key => $val) {
 				if($val["XML_ID"] === ACTIVE_TRIGGER_PROPERTY_XML_ID) {
 					if($val["VALUE"] === ACTIVE_TRIGGER_PROPERTY_VALUE_DEACTIVE && $arRes["ACTIVE"] === "Y") {
-						$el = new CIBlockElement;
 						$arLoadProductArray = Array("ACTIVE" => "N");
 						$el->Update($arFields["ID"], $arLoadProductArray);
 					} elseif ($val["VALUE"] === ACTIVE_TRIGGER_PROPERTY_VALUE_ACTIVE && $arRes["ACTIVE"] === "N") {
-						$el = new CIBlockElement;
 						$arLoadProductArray = Array("ACTIVE" => "Y");
 						$el->Update($arFields["ID"], $arLoadProductArray);
-					}
+					} else {
+                        $arLoadProductArray = Array("ACTIVE" => "Y");
+                        $el->Update($arFields["ID"], $arLoadProductArray);
+                    }
 				}
 			}
 		}
