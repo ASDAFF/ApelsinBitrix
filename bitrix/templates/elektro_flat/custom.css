@@ -1937,3 +1937,9 @@ ul.left-menu > li > a {
 .pageFinalPaymentOrderNunber {
     color: #ef7f1a;
 }
+
+/*Заказ. Скрытие полей подъём и ко времени*/
+[data-property-id-row="33"],
+[data-property-id-row="34"] {
+    display: none;
+}

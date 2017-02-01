@@ -103,9 +103,29 @@ CJSCore::Init(array('fx', 'popup', 'window', 'ajax'));?>
 						APLS_hideAdresInput();
 					}
 				}
-				
+
+				function APLS_checkDeleveryServise() {
+//					подъём
+					var input1 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[2][11]']" );
+					var input2 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[8][12]']" );
+//					ко времени
+					var input3 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[2][8]']" );
+					var input4 = $( "input:checkbox[name*='DELIVERY_EXTRA_SERVICES[8][10]']" );
+					APLS_checkDeleveryServiseInput(input1, input2, "#ORDER_PROP_33");
+					APLS_checkDeleveryServiseInput(input3, input4, "#ORDER_PROP_34");
+				}
+
+				function APLS_checkDeleveryServiseInput(input1, input2, id) {
+					if ($(input1).is(":checked") || $(input2).is(":checked")) {
+						$(id).prop("checked", true);
+					} else {
+						$(id).prop("checked", false);
+					}
+				}
+
 				function APLS_updateDeleveryFormInput() {
 					APLS_checkAdresInput();
+					APLS_checkDeleveryServise();
 					if($("input").is("#ORDER_PROP_21")) {
 						$("#apls_adress_map").show();
 						ymaps.ready(init);
