@@ -34,9 +34,9 @@ if(strlen($arResult["ERROR_MESSAGE"])<=0):?>
 							<?if(IntVal($arResult["PAY_SYSTEM_ID"]) > 0):
 								echo $arResult["PAY_SYSTEM"]["NAME"];								
 								if($arResult["CAN_REPAY"]=="Y"):
-									if($arResult["PAY_SYSTEM"]["PSA_NEW_WINDOW"] == "Y"):?>
+									if($arResult["STATUS_ID"]=="A" && $arResult["CAN_REPAY"]=="Y"):
 										<br />
-										<a href="<?=$arResult["PAY_SYSTEM"]["PSA_ACTION_FILE"]?>" target="_blank"><?=GetMessage("SALE_REPEAT_PAY")?></a>
+										<a href="<?=$arResult["PAY_SYSTEM"]["PSA_ACTION_FILE"]?>&GOTOPAY=yes" target="_blank"><?=GetMessage("SALE_REPEAT_PAY")?></a>
 									<?endif;
 								endif;
 							else:
@@ -171,7 +171,6 @@ if(strlen($arResult["ERROR_MESSAGE"])<=0):?>
 	<table class="order-recipient">
 		<?if(!empty($arResult["ORDER_PROPS"])) {
 			foreach($arResult["ORDER_PROPS"] as $val) {
-
 				if (
 					$val["NAME"] != "Тип цен клиента" &&
 					!($val["NAME"] == "Наличие лифта" && $val["VALUE"] == "Нет лифта")
@@ -180,7 +179,7 @@ if(strlen($arResult["ERROR_MESSAGE"])<=0):?>
 					<tr>
 						<td class="field-name"><?echo $val["NAME"] ?>:</td>
 						<td class="field-value">
-							<?if($val["TYPE"] == "CHECKBOX") {
+							<?if($val["TYPE"] == "Y/N") {
 								if($val["VALUE"] == "Y")
 									echo GetMessage("SALE_YES");
 								else
