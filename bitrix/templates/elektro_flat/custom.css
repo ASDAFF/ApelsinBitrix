@@ -19,6 +19,10 @@ button[disabled] {
     background: #edeef8 !important;
 }
 
+a#to_top i{
+    top: 60px !important;
+}
+
 .style-switcher,
 .style-switcher > div{
     display: none !important;
