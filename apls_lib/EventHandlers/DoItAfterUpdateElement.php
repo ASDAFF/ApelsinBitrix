@@ -23,10 +23,7 @@ function DoItAfterUpdateElement (&$arFields) {
 					} elseif ($val["VALUE"] === ACTIVE_TRIGGER_PROPERTY_VALUE_ACTIVE && $arRes["ACTIVE"] === "N") {
 						$arLoadProductArray = Array("ACTIVE" => "Y");
 						$el->Update($arFields["ID"], $arLoadProductArray);
-					} else {
-                        $arLoadProductArray = Array("ACTIVE" => "Y");
-                        $el->Update($arFields["ID"], $arLoadProductArray);
-                    }
+					}
 				}
 			}
 		}
