@@ -34,7 +34,7 @@ if(strlen($arResult["ERROR_MESSAGE"])<=0):?>
 							<?if(IntVal($arResult["PAY_SYSTEM_ID"]) > 0):
 								echo $arResult["PAY_SYSTEM"]["NAME"];								
 								if($arResult["CAN_REPAY"]=="Y"):
-									if($arResult["STATUS_ID"]=="A" && $arResult["CAN_REPAY"]=="Y")?>
+									if($arResult["STATUS_ID"]=="A" && $arResult["CAN_REPAY"]=="Y"):?>
 										<br />
 										<a href="<?=$arResult["PAY_SYSTEM"]["PSA_ACTION_FILE"]?>&GOTOPAY=yes" target="_blank"><?=GetMessage("SALE_REPEAT_PAY")?></a>
 									<?endif;
