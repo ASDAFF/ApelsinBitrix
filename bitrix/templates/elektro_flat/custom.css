@@ -14,17 +14,18 @@ h3 {
     font-weight: 500;
     /*font-style: italic;*/
 }
+
 button[disabled] {
     color: #a0a4bc !important;
     background: #edeef8 !important;
 }
 
-a#to_top i{
+a#to_top i {
     top: 60px !important;
 }
 
 .style-switcher,
-.style-switcher > div{
+.style-switcher > div {
     display: none !important;
 }
 
@@ -47,6 +48,7 @@ a#feedback-button.atlwdg-trigger.atlwdg-SUBTLE {
     padding: 10px 25px;
     text-transform: uppercase !important;
 }
+
 .jira-button {
     /*display: inline-block;*/
     /*display: -moz-inline-stack;*/
@@ -58,8 +60,9 @@ a#feedback-button.atlwdg-trigger.atlwdg-SUBTLE {
     box-shadow: none !important;
     text-decoration: none !important;
     color: #ffffff !important;
-    border-left: 1px solid rgba(0,0,0,0.05) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
+
 .jira-button .fa-jira {
     display: table-cell;
     vertical-align: middle;
@@ -68,11 +71,13 @@ a#feedback-button.atlwdg-trigger.atlwdg-SUBTLE {
     -webkit-font-smoothing: antialiased;
     box-shadow: none !important;
 }
+
 .fa-jira:before {
     content: "\f071";
     content: "\f188";
     box-shadow: none !important;
 }
+
 .jira-button:hover {
     background: #ffffff !important;
     color: #f18c32 !important;
@@ -141,7 +146,7 @@ ol.num {
 }
 
 ol.num li:before {
-    content: counters(num,".") ". ";
+    content: counters(num, ".") ". ";
     counter-increment: num;
 }
 
@@ -156,7 +161,7 @@ table ol.num {
 }
 
 table ol.num li:before {
-    content: counters(tnum,".") ". ";
+    content: counters(tnum, ".") ". ";
     counter-increment: tnum;
 }
 
@@ -205,75 +210,89 @@ p.TextListName a:hover {
     margin-right: 5px;
 }
 
-
 table.Stylized {
-    overflow:hidden;
-    border:1px solid #d3d3d3;
-    background:#fefefe;
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+    background: #fefefe;
     width: 95%;
-    -moz-border-radius:5px; /* FF1+ */
-    -webkit-border-radius:5px; /* Saf3-4 */
-    border-radius:5px;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px;
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
     margin: 20px auto;
 }
+
 table.Stylized.auto_width {
     width: auto;
 }
-table.Stylized th,table.Stylized td {
+
+table.Stylized th, table.Stylized td {
     padding: 5px 5px;
-    text-align:center;
+    text-align: center;
 }
+
 table.Stylized th {
     font: bold 14px/20px 'Roboto', "PT Sans", helvetica, "segoe UI", arial, sans-serif;
-    padding-top:12px;
+    padding-top: 12px;
     text-shadow: 1px 1px 1px #fff;
-    background:#e8eaeb;
+    background: #e8eaeb;
 }
+
 table.Stylized td {
     font: 300 12px/20px 'Roboto', "PT Sans", helvetica, "segoe UI", arial, sans-serif;
-    border-top:1px solid #e0e0e0;
-    border-right:1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
 }
+
 table.Stylized tr.odd-row td {
-    background:#f6f6f6;
+    background: #f6f6f6;
 }
+
 table.Stylized td.first, table.Stylized th.first {
-    text-align:left
+    text-align: left
 }
+
 table.Stylized td.last {
-    border-right:none;
+    border-right: none;
 }
+
 table.Stylized td {
     background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
     background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
 }
+
 table.Stylized tr.odd-row td {
     background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
     background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
 }
+
 table.Stylized th {
     background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
     background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
 }
+
 table.Stylized tr:first-child th.first {
-    -moz-border-radius-topleft:5px;
-    -webkit-border-top-left-radius:5px; /* Saf3-4 */
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px; /* Saf3-4 */
 }
+
 table.Stylized tr:first-child th.last {
-    -moz-border-radius-topright:5px;
-    -webkit-border-top-right-radius:5px; /* Saf3-4 */
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px; /* Saf3-4 */
 }
+
 table.Stylized tr:last-child td.first {
-    -moz-border-radius-bottomleft:5px;
-    -webkit-border-bottom-left-radius:5px; /* Saf3-4 */
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px; /* Saf3-4 */
 }
+
 table.Stylized tr:last-child td.last {
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-right-radius:5px; /* Saf3-4 */
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px; /* Saf3-4 */
 }
+
 table.Stylized tr:hover td {
     cursor: pointer;
     background: #F8F8F8;
@@ -285,7 +304,9 @@ table.Stylized tr td img {
     width: 50px;
 }
 
-.NavigatorBigIcon {}
+.NavigatorBigIcon {
+}
+
 .NavigatorBigIcon .NavigatorBigIconElement {
     float: left;
     border: 1px solid #dee0ee;
@@ -295,44 +316,49 @@ table.Stylized tr td img {
     color: #8184a1;
 }
 
-.NavigatorBigIcon .NavigatorBigIconElement{
-    padding:5px;
+.NavigatorBigIcon .NavigatorBigIconElement {
+    padding: 5px;
 }
 
 .NavigatorBigIcon .NavigatorBigIconElementHref {
-    float:left;
-    margin:0px 0px 5px 0px;
+    float: left;
+    margin: 0px 0px 5px 0px;
 }
 
-.NavigatorBigIcon .NavigatorBigIconElementHref:nth-child(4n + 2){
-    margin:0px 5px 5px 5px;
-}
-.NavigatorBigIcon .NavigatorBigIconElementHref:nth-child(4n + 3){
-    margin:0px 5px 5px 0px;
+.NavigatorBigIcon .NavigatorBigIconElementHref:nth-child(4n + 2) {
+    margin: 0px 5px 5px 5px;
 }
 
+.NavigatorBigIcon .NavigatorBigIconElementHref:nth-child(4n + 3) {
+    margin: 0px 5px 5px 0px;
+}
 
 .NavigatorBigIcon .NavigatorBigIconElement:hover {
     border: 2px solid #ef7f1a;
     color: #ef7f1a;
-    padding:4px;
+    padding: 4px;
     cursor: pointer;
 }
+
 .NavigatorBigIcon .NavigatorBigIconElement img {
     display: block;
     margin: 20px auto;
     width: 182px;
     height: 122px;
 }
+
 .NavigatorBigIcon .NavigatorBigIconElement img.hover {
     display: none;
 }
+
 .NavigatorBigIcon .NavigatorBigIconElement:hover img.hover {
     display: block;
 }
+
 .NavigatorBigIcon .NavigatorBigIconElement:hover img.main {
     display: none;
 }
+
 .NavigatorBigIcon .NavigatorBigIconElement .title {
     font-size: 16px;
     font-weight: 600;
@@ -343,15 +369,18 @@ table.Stylized tr td img {
 .ymaps-2-1-45-balloon__content {
     padding: 0 !important;
 }
+
 .ymaps-2-1-45-balloon__close + .ymaps-2-1-45-balloon__content {
     margin-right: 0 !important;
 }
+
 .ymaps-2-1-45-balloon__close {
     position: absolute !important;
     right: -5px !important;
     top: -4px !important;
     background: #ef7f1a;
 }
+
 .ymaps-2-1-45-balloon__close-button {
     height: 34px !important;
     background: url(../../../apls_resources/icons/delivery/close_white_ymap.png) center center no-repeat !important;
@@ -361,90 +390,114 @@ table.Stylized tr td img {
     width: 960px;
     height: 400px;
 }
+
 .deliveryMapWrapper {
     color: #575b71;
-    font-family:"Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
+
 .deliveryMap {
     border-collapse: collapse;
     border: none;
 }
+
 .deliveryMap .lineGrey {
     border-bottom: 2px #e8eaeb solid;
 }
+
 .deliveryMap .lineOrange {
     border-bottom: 2px #ef7f1a solid;
 }
+
 .deliveryMap th {
     padding: 0;
     margin: 0;
 }
+
 .deliveryMap td {
     padding: 3px 10px;
     text-align: center;
     border-right: 1px #edeef8 solid;
     white-space: nowrap;
 }
+
 .deliveryMap td:last-child {
     border: none;
 }
+
 .deliveryMapTitleBorderWhite {
     border-right: 1px #fff solid;
 }
+
 .deliveryMapTitle {
     padding: 5px;
     text-align: center;
     background: #ef7f1a;
     color: #fff;
 }
+
 .deliveryMapTitleATTheTime {
     padding: 5px;
     text-align: center;
     background: #e8eaeb;
     color: #000;
 }
+
 .deliveryMapTD {
     width: 50px;
     height: 50px;
     padding: 0;
     margin: 0 auto;
 }
+
 .deliveryMapAtTheTime {
     border-top: 1px #edeef8 solid !important;
 }
+
 .deliveryMapIcon_truck_1_5 {
     background: url(../../../apls_resources/icons/delivery/truck_1_5.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_truck_3_5 {
     background: url(../../../apls_resources/icons/delivery/truck_3_5.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_truck_5 {
     background: url(../../../apls_resources/icons/delivery/truck_5.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_truck_10 {
     background: url(../../../apls_resources/icons/delivery/truck_10.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_truck_20 {
     background: url(../../../apls_resources/icons/delivery/truck_20.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_manipulator {
     background: url(../../../apls_resources/icons/delivery/manipulator.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_phone {
     background: url(../../../apls_resources/icons/delivery/phone.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_climb {
     background: url(../../../apls_resources/icons/delivery/climb.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_truck_long {
     background: url(../../../apls_resources/icons/delivery/truck_long.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_assembling {
     background: url(../../../apls_resources/icons/delivery/assembling.svg) center center no-repeat;
 }
+
 .deliveryMapIcon_color {
     background: url(../../../apls_resources/icons/delivery/color.svg) center center no-repeat;
 }
+
 .deliveryMapTextLeft td {
     text-align: left !important;
 }
@@ -452,6 +505,7 @@ table.Stylized tr td img {
 .blockAnchor {
     position: relative;
 }
+
 .blockAnchor a {
     position: absolute;
     top: -60px;
@@ -466,20 +520,25 @@ table.Stylized tr td img {
     float: left;
     cursor: pointer;
 }
+
 .LogoBanksSmall {
     height: 75px;
     float: left;
     margin-right: 15px;
 }
+
 .logoText {
     margin-top: 25px;
 }
+
 .contentBank {
     display: none;
 }
+
 .tableBanksDataLeft td {
     text-align: left !important;
 }
+
 .LogoBanks:hover {
     border: 2px solid #ef7f1a;;
     margin: 3px;
@@ -488,10 +547,13 @@ table.Stylized tr td img {
 }
 
 /* Контакты магазинов */
-.RegionsContacts {}
+.RegionsContacts {
+}
+
 .RegionsContacts .RegionsButtonsWrapper {
     height: 40px;
 }
+
 .RegionsContacts .RegionsButtonsWrapper .RegionsButtonBlock {
     color: #8184a1;
     text-decoration: none;
@@ -503,36 +565,53 @@ table.Stylized tr td img {
     margin: 0 10px 10px 0;
     cursor: pointer;
 }
+
 .RegionsContacts .RegionsButtonsWrapper .RegionsButtonBlock:hover,
 .RegionsContacts .RegionsButtonsWrapper .RegionsButtonBlock.current:hover {
     background: #8184a1 !important;
     border: 1px solid #8184a1 !important;
     color: #fff;
 }
+
 .RegionsContacts .RegionsButtonsWrapper .RegionsButtonBlock.current {
     background: #ef7f1a !important;
     border: 1px solid #ef7f1a !important;
     color: #fff;
 }
-.RegionsContacts .RegionsWrapper {}
+
+.RegionsContacts .RegionsWrapper {
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock {
     position: relative;
     height: 660px;
 }
-.RegionsContacts .RegionsWrapper .RegionBlock:not(:first-child) { display: none; }
+
+.RegionsContacts .RegionsWrapper .RegionBlock:not(:first-child) {
+    display: none;
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps {
     width: 100%;
     height: 100%;
     text-align: center;
 }
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .RegionMap { display: none; }
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .RegionMap.Main { display: block; }
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .RegionMap {
+    display: none;
+}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .RegionMap.Main {
+    display: block;
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .ymaps-2-1-41-controls__toolbar_left,
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .ymaps-2-1-41-controls__toolbar_right,
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .ymaps-2-1-41-controls__control,
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .ymaps-2-1-41-copyright__content{
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionMaps .ymaps-2-1-41-copyright__content {
     display: none;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements {
     overflow-y: auto;
     overflow-x: hidden;
@@ -543,13 +622,17 @@ table.Stylized tr td img {
     bottom: 0;
     border: none;
     background: #ffffff;
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, .9);
     background: transparent;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement {
     border-bottom: 2px solid #ffffff;
 }
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock {}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock {
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactName {
     cursor: pointer;
     user-select: none;
@@ -557,6 +640,7 @@ table.Stylized tr td img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
 /*.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactName h1 {*/
 /*background: #ef7f1a;*/
 /*color: #ffffff;*/
@@ -568,17 +652,19 @@ table.Stylized tr td img {
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactName h1 {
     background: #ffffff;
     color: #ef7f1a;
-    font: 16px/20px Arial,Helvetica,sans-serif;
+    font: 16px/20px Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 10px 0;
     margin: 0;
     border: 2px solid #ef7f1a;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactName h1:hover,
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactName.current h1 {
     background: #ef7f1a;
     color: #ffffff;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData {
     padding: 18px 10px 18px 30px;
     position: relative;
@@ -587,13 +673,16 @@ table.Stylized tr td img {
     color: #8184a1;
     display: none;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData a {
     color: #8184a1;
     text-decoration: none;
 }
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData a:hover {
     color: #ef7f1a;
 }
+
 /*
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData {
     padding: 18px 10px 18px 30px;
@@ -621,20 +710,37 @@ table.Stylized tr td img {
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText {
     padding-bottom: 10px;
 }
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_adress {}
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_email {}
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_phone {}
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable {}
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table {}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_adress {
+}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_email {
+}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactText .ShopСontactText_phone {
+}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable {
+}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table {
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table td.time_table_text {
     text-align: right;
 }
-.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table td.time_table_text span.mainDay {}
+
+.RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table td.time_table_text span.mainDay {
+}
+
 .RegionsContacts .RegionsWrapper .RegionBlock .RegionElements .RegionElement .ShopСontactBlock .ShopСontactData .ShopСontactTimeTable table.time_table td.time_table_time {
     text-align: left;
 }
+
 /* Контакты менеджеров */
-.WokersWrapper {}
+.WokersWrapper {
+}
+
 .WokersWrapper .WokerBlock {
     display: block;
     float: left;
@@ -643,9 +749,11 @@ table.Stylized tr td img {
     padding: 10px 10px;
     margin: 3px;
 }
+
 .WokersWrapper .WokerBlock:hover {
     border: 1px solid #ef7f1a;
 }
+
 .WokersWrapper .WokerBlock .WorkerContactFIO {
     text-align: right;
     font-size: 14px;
@@ -653,6 +761,7 @@ table.Stylized tr td img {
     text-transform: uppercase;
     color: #ef7f1a;
 }
+
 .WokersWrapper .WokerBlock .WorkerContactPost {
     text-align: right;
     font-size: 12px;
@@ -662,15 +771,22 @@ table.Stylized tr td img {
     margin-bottom: 5px;
     border-bottom: 1px solid #dee0ee;
 }
-.WokersWrapper .WokerBlock .WorkerContactBlock {}
-.WokersWrapper .WokerBlock .WorkerContactBlock .WokerDataBlock {}
+
+.WokersWrapper .WokerBlock .WorkerContactBlock {
+}
+
+.WokersWrapper .WokerBlock .WorkerContactBlock .WokerDataBlock {
+}
+
 .WokersWrapper .WokerBlock .WorkerContactBlock .WokerDataBlock .MainWokerData {
     height: 60px;
 }
+
 .WokersWrapper .WokerBlock .WorkerContactBlock .WokerDataBlock .WorkerContactContact {
     font-size: 12px;
     text-align: center;
 }
+
 .WokersWrapper .WokerBlock .WorkerContactBlock .WokerDataBlock .WorkerContactContact.text {
     height: 50px;
     width: 211px;
@@ -685,7 +801,7 @@ table.Stylized tr td img {
 /* Сервисные центры */
 .workarea .ServiceCenterSelectBox {
     background: #efefef;
-    background: rgb(245,250,255);
+    background: rgb(245, 250, 255);
     background: #fff url('../img/page_bg.png') 0 0 repeat;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -693,19 +809,19 @@ table.Stylized tr td img {
     -webkit-border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    font: 14px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 14px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     color: #000;
     width: 500px;
     margin: 2px 0px 2px 0px;
     border: none;
-    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
     text-shadow: 0 1px 0 #fff;
 }
 
 .workarea h2.ServiceCentersSection {
-    font: 18px/30px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 18px/30px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     font-weight: bold;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     text-align: center;
     color: #fff;
     height: 30px;
@@ -718,10 +834,12 @@ table.Stylized tr td img {
     width: 475px;
     float: left;
 }
+
 .workarea .ServiceCentersGroup_Column2 {
     width: 475px;
     float: right;
 }
+
 .workarea .ServiceCentersElement {
     width: 465px;
     /*float: left;*/
@@ -731,18 +849,20 @@ table.Stylized tr td img {
     padding-bottom: 5px;
     margin: 5px;
     background: white url(../img/grid.png) repeat center center;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    font: 14px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    font: 14px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
 }
+
 .workarea .ServiceCentersElement .element, .workarea .ServiceCentersElement .inf {
     text-align: justify;
     /*font: 0.95em 'Open Sans',Arial,Helvetica,sans-serif;*/
-    font: 14px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 14px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     line-height: 1.2;
     margin: 0px;
 }
+
 .workarea .ServiceCentersElement .element {
-    background: rgba(200,200,200,0.5);
+    background: rgba(200, 200, 200, 0.5);
     text-align: left;
     margin: 0px 0px 5px 0px;
     padding: 2px 10px 2px 10px;
@@ -752,6 +872,7 @@ table.Stylized tr td img {
     color: #fff;
     text-shadow: none;
 }
+
 .workarea .ServiceCentersElement .inf {
     color: #444;
     font-size: 12px;
@@ -759,23 +880,28 @@ table.Stylized tr td img {
     padding: 0px 10px 0px 30px;
     text-align: left;
 }
+
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable {
     width: 100%;
 }
+
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable,
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable td {
     border-collapse: collapse;
     border: none;
 }
+
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable .ServiceCentersInformationTable_Adress {
     padding-bottom: 10px;
     text-align: left;
     vertical-align: middle;
 }
+
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable .ServiceCentersInformationTable_Logo {
     text-align: right;
     vertical-align: bottom;
 }
+
 .workarea .ServiceCentersElement .inf .ServiceCentersInformationTable .ServiceCentersInformationTable_Logo .ServiceCentersLogo {
     max-width: 150px;
     max-height: 20px;
@@ -787,6 +913,7 @@ table.Stylized tr td img {
 .catalog-detail .catalog-detail-preview-text {
     display: none;
 }
+
 .article_rating .rating {
     display: none;
 }
@@ -795,17 +922,18 @@ table.Stylized tr td img {
 .productDetails {
     float: left;
 }
+
 .productDetailsIcons {
     width: 40px;
     height: 40px;
     margin-right: 7px;
     cursor: pointer;
 }
+
 .availableServices {
     font-size: 12px;
     color: #a0a4bc;
 }
-
 
 /**********************/
 /*  ИЗМЕНЕНИЯ СТИЛЕЙ  */
@@ -874,12 +1002,12 @@ ul.left-menu > li.parent > ul.submenu, ul.left-menu > li.parent > .catalog-secti
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
+
 ul.left-menu > li > a {
     font-size: 10px !important;
 }
 
-
-    /* умный фильтр слева */
+/* умный фильтр слева */
 .catalog_item_toogle_filter .showfilter,
 .filter {
     -moz-border-radius: 0;
@@ -915,22 +1043,26 @@ a.catalog_item_toogle_filter_hidden, a.catalog_item_toogle_filter_reset {
 .filter.vertical form table tr td .bx_filter_container_modef_popup {
 
 }
+
 .filter form table tr td .bx_filter_popup {
     border: 1px solid #ef7f1a;
     background: #ef7f1a;
     color: #FFFFFF;
     padding: 10px 10px;
 }
+
 .filter.vertical form table tr td .bx_filter_popup:before {
     border-left: none;
     border-right: 9px solid #ef7f1a;
     border-right: none !important;
 }
+
 .filter.vertical form table tr td .bx_filter_popup:after {
     border-left: none;
     border-right: 10px solid #ef7f1a;
     left: -10px;
 }
+
 .filter form table tr td .bx_filter_popup a,
 .filter form table tr td .bx_filter_popup a:visited {
     border: 1px #FFFFFF solid;
@@ -938,11 +1070,13 @@ a.catalog_item_toogle_filter_hidden, a.catalog_item_toogle_filter_reset {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 .filter form table tr td .bx_filter_popup a:hover {
     text-decoration: none;
     background: #FFFFFF;
     color: #ef7f1a;
 }
+
 .filter form table tr td .bx_filter_popup #modef_popup_num {
     display: inline-block;
     font-size: 14px;
@@ -953,7 +1087,7 @@ a.catalog_item_toogle_filter_hidden, a.catalog_item_toogle_filter_reset {
     text-align: center;
 }
 
-    /* сортировка */
+/* сортировка */
 .catalog-item-sorting a:hover, .catalog-item-limit a:hover {
     color: #ffffff;
     border: 1px solid #ef7f1a;
@@ -970,6 +1104,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .catalog-item-sorting a.selected.asc:after {
     border-bottom: 6px solid #ffffff;
 }
+
 .catalog-item-sorting a.selected.desc:after {
     border-top: 6px solid #ffffff;
 }
@@ -1274,6 +1409,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     color: #ffffff !important;
     background: #f18c32 !important;
 }
+
 /*
 .foot_panel .btn_buy.popdef {
     background: #d26b0f !important;
@@ -1471,15 +1607,19 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     height: 22px;
     width: 22px;
 }
+
 .fa.delivery-small-icon {
     background: url("./icon/delivery-small-icon.svg") center center no-repeat;
 }
+
 .fa.bonus-small-icon {
     background: url("./icon/bonus-small-icon.svg") center center no-repeat;
 }
+
 .fa.discount-small-icon {
     background: url("./icon/discount-small-icon.svg") center center no-repeat;
 }
+
 .fa.credit-small-icon {
     background: url("./icon/credit-small-icon.svg") center center no-repeat;
 }
@@ -1488,15 +1628,18 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .reviews-section-child a:hover {
     background: #ef7f1a;
 }
+
 .reviews-section-child a:hover .child .text {
     color: #ffffff;
 }
+
 .reviews-list .reviews-item .item-image {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
     border-radius: 0;
 }
+
 .reviews-list .reviews-item {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -1504,6 +1647,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     border-radius: 0;
     border: 1px solid #ffffff;
 }
+
 .reviews-list .reviews-item:hover {
     webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
@@ -1513,8 +1657,8 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 
 /* Вакансии */
 .VacanciesValidBlock {
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    font: 14px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    font: 14px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     padding-bottom: 20px;
     width: 470px;
     margin: 10px 5px 10px 5px;
@@ -1524,13 +1668,16 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .VacanciesValidBlockArchive {
     display: none;
 }
+
 .VacanciesValidBlockColumn_01,
 .VacanciesValidBlockColumn_02 {
     width: 478px;
 }
+
 .VacanciesValidBlockColumn_01 {
     float: left;
 }
+
 .VacanciesValidBlockColumn_02 {
     float: right;
 }
@@ -1542,7 +1689,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 
 .VacanciesValidBlockTitleText {
     color: #fff;
-    font: 20px/32px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 20px/32px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     font-weight: bold;
     padding: 0 6px;
     height: 32px;
@@ -1552,8 +1699,9 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 
 .VacanciesValidString {
     border-bottom: 1px #999 dotted;
-    font: 14px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 14px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
 }
+
 .VacanciesValidString:hover {
     background: #fdd19a;
     cursor: pointer;
@@ -1571,7 +1719,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .validVacancyAdress {
     width: 190px;
     width: 320px;
-    font: 14px/32px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 14px/32px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
 }
 
 .validVacancyContactUser {
@@ -1587,6 +1735,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     text-align: center;
     padding: 10px;
 }
+
 #APLS_mapGeometry {
     display: none;
     height: 50px;
@@ -1596,9 +1745,9 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     min-width: 938px;
     max-width: 938px;
     padding: 10px;
-    font: 13px/17px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 13px/17px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     border: none;
-    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
     text-shadow: 0 1px 0 #fff;
 }
 
@@ -1606,33 +1755,39 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .FeaturesProductsWrapper {
     margin-bottom: 15px;
 }
+
 .FeaturesProductsIconBlock {
     /*background: #00a2df;*/
     height: 40px;
     width: 40px;
     float: left;
 }
+
 .FeaturesProductsWrapper .FeaturesProductsTextBlock {
     /*background: #00aa00;*/
     float: left;
     width: 888px;
     padding: 3px 10px;
 }
+
 .FeaturesProductsWrapper .FeaturesProductsTextBlock .FeaturesProductsName {
     font-weight: bold;
 }
-.FeaturesProductsWrapper .FeaturesProductsTextBlock .FeaturesProductsText {}
+
+.FeaturesProductsWrapper .FeaturesProductsTextBlock .FeaturesProductsText {
+}
 
 /* Футер */
 .footer_menu {
     width: 953px;
 }
+
 .footer_soc_pay {
     width: 221px;
 }
 
 /* скрытые элементы */
-.catalog-detail  .catalog-detail-buttons {
+.catalog-detail .catalog-detail-buttons {
     display: none;
 }
 
@@ -1642,6 +1797,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     background: #ef7f1a;
     color: #FFFFFF;
 }
+
 .catalog_item_toogle_filter .showfilter span,
 .catalog_item_toogle_filter .showfilter i {
     color: #FFFFFF;
@@ -1650,9 +1806,10 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 /* Оформление системных сообщений */
 .alertMsg.good {
     border: 1px solid #ef7f1a;
-    background:#ef7f1a;
+    background: #ef7f1a;
     color: #FFFFFF;
 }
+
 .alertMsg.good .text {
     color: #FFFFFF;
 }
@@ -1661,56 +1818,71 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 .bx-core-adm-dialog.popup-store table#store_table td.image {
     display: none;
 }
+
 .bx-core-adm-dialog {
     overflow: visible !important;
 }
+
 .myorders .person_type, .myorders .order-info, .personal .personal-info {
     border-top: none;
 }
-.order-info #select_store>.select_store {
+
+.order-info #select_store > .select_store {
     font-weight: bolder;
 }
-.order-info #select_store>.ora-store {
+
+.order-info #select_store > .ora-store {
     font-weight: bolder;
     color: #ef7f1a;
 }
+
 .order-info .sale_delivery_price {
     font-weight: bolder;
 }
+
 .order-info .order-info_in.order-info_in_table {
     padding: 0;
     border: none;
 }
-.order-info .order-info_in>table {
-    border-collapse:collapse;
+
+.order-info .order-info_in > table {
+    border-collapse: collapse;
     border: none;
     margin: 0px;
 }
-.order-info .order-info_in>table tr:hover {
+
+.order-info .order-info_in > table tr:hover {
     background: #f7f7f7;
     cursor: pointer !important;
 }
+
 .order-info .order-info_in.order-info_in_table td {
     vertical-align: middle;
 }
-.order-info .order-info_in.order-info_in_table td>div{
+
+.order-info .order-info_in.order-info_in_table td > div {
     text-align: justify;
 }
-.order-info .order-info_in.order-info_in_table td.name{
+
+.order-info .order-info_in.order-info_in_table td.name {
     color: #8184a1;
-    font: bolder 13px/13px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: bolder 13px/13px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
 }
-.order-info .order-info_in>table>tbody>tr>td:first-child {
+
+.order-info .order-info_in > table > tbody > tr > td:first-child {
     width: 40px;
 }
-.order-info .order-info_in>table>tbody>tr>td:last-child {
+
+.order-info .order-info_in > table > tbody > tr > td:last-child {
     padding-right: 25px;
 }
-.order-info .order-info_in>table>tbody>tr>td {
+
+.order-info .order-info_in > table > tbody > tr > td {
     padding: 10px 5px;
     border-bottom: 1px solid #edeef8;
 }
-.order-info .order-info_in>table>tbody>tr:last-child>td {
+
+.order-info .order-info_in > table > tbody > tr:last-child > td {
     border-bottom: none;
 }
 
@@ -1718,39 +1890,47 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
 #order_form_content.personal h2 {
     margin: 0 !important;
 }
+
 #order_form_content.myorders h2 + .cart-items .equipment-order,
 #order_form_content.personal h2 + .cart-items .equipment-order {
     margin-top: 2px;
 }
+
 #order_form_content.myorders .cart-items .equipment-order .tr,
 #order_form_content.personal .cart-items .equipment-order .tr {
     border-top: none;
     margin: 0;
 }
+
 .cart-items .equipment .tbody .myorders_itog,
 .cart-items .equipment-order .myorders_itog {
     border-top: none !important;
     margin: 0 !important;
 }
+
 .order-info .order-info_in .block {
     position: relative;
 }
+
 .order-info .order-info_in .block span.star {
     color: #d26b0f;
     display: inline-block;
     width: 16px;
     height: 16px;
     text-align: center;
-    font: 16px/16px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 16px/16px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     position: absolute;
     top: 10px;
 }
+
 .location-block-wrapper {
     display: inline-block;
 }
+
 .myorders .order-info .dropdown-block {
     margin: 0;
 }
+
 .order-info .order-info_in .block select {
     width: 319px;
 }
@@ -1762,6 +1942,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     margin: 0 3px 0 0;
     display: none;
 }
+
 .radio + label {
     display: block;
     margin: 0 auto;
@@ -1770,12 +1951,15 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     width: 24px;
 
 }
+
 .radio:not(checked) {
     position: absolute;
 }
+
 .radio:not(checked) + label {
     position: relative;
 }
+
 .radio:not(checked) + label:before {
     font-weight: bolder;
     content: '✖';
@@ -1786,7 +1970,7 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     height: 22px;
     background: #edeef8;
     background: transparent;
-    font: 16px/22px "PT Sans",helvetica,"segoe UI",arial,sans-serif;
+    font: 16px/22px "PT Sans", helvetica, "segoe UI", arial, sans-serif;
     color: #8184a1;
     text-align: center;
 }
@@ -1796,11 +1980,12 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     content: '✔';
     color: #ef7f1a;
 }
+
 .radio:focus + label:before {
-    box-shadow: 0 0 0 3px rgba(239,127,26,.5);
+    box-shadow: 0 0 0 3px rgba(239, 127, 26, .5);
 }
 
-.order-info .order-info_in>table tr:hover .radio:not(checked) + label:before {
+.order-info .order-info_in > table tr:hover .radio:not(checked) + label:before {
     content: '✔';
 }
 
@@ -1810,15 +1995,18 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     margin-bottom: 10px;
     display: none;
 }
+
 #apls_adress_map .ymaps-2-1-45-copyrights-pane,
 #apls_adress_map .ymaps-2-1-45-controls__control,
 #apls_adress_map .ymaps-2-1-45-controls__bottom,
-#apls_adress_map .ymaps-2-1-45-controls-pane{
+#apls_adress_map .ymaps-2-1-45-controls-pane {
     display: none;
 }
+
 .delivery_extra_services {
     margin-left: 90px;
 }
+
 .delivery_extra_services .name {
     text-align: right;
 }
@@ -1833,27 +2021,33 @@ a.selected:hover, .catalog-item-limit a.selected, .catalog-item-limit a.selected
     line-height: 20px;
     margin-bottom: 10px;
 }
+
 ul.left-menu > li > a {
     font-size: 12px;
 }
 
 /* Мои заказы */
-.cart-items .equipment-order.list .thead .cart-item-status{
-    width:155px;
+.cart-items .equipment-order.list .thead .cart-item-status {
+    width: 155px;
 }
+
 .cart-items .equipment-order.detail .thead .cart-item-status {
     width: 155px;
 }
+
 .cart-items .equipment-order.list .tbody .cart-item-status span.item-status-a {
-    font-weight:700;
-    color:#688123;
+    font-weight: 700;
+    color: #688123;
 }
-.cart-items .equipment-order.list .tbody .cart-item-status{
-     width:150px;
+
+.cart-items .equipment-order.list .tbody .cart-item-status {
+    width: 150px;
 }
+
 .cart-items .equipment-order.detail .tbody .cart-item-status {
     width: 150px;
 }
+
 .cart-item-payment a {
     border: 2px solid #ef7f1a;
     background: #FFFFFF;
@@ -1869,32 +2063,37 @@ ul.left-menu > li > a {
     text-align: center;
     margin-top: 10px;
 }
+
 .cart-item-payment a:hover {
     border: 2px solid #ef7f1a;
     background: #ef7f1a;
     color: #FFFFFF !important;
 }
+
 .notetext p a {
     color: #ef7f1a;
     text-decoration: none !important;
     font-weight: bold;
 }
+
 .notetext p a:hover {
     text-decoration: underline !important;
     cursor: pointer;
 }
 
-
 /* Кол-во товара на складе */
 #catalog-detail-stores-from .catalog-detail-store {
     border: 1px solid #e0e3e7;
 }
+
 #catalog-detail-stores-from .catalog-detail-store .store {
     width: 550px;
 }
+
 #catalog-detail-stores-from .catalog-detail-store .adres {
     margin: auto 0;
 }
+
 #catalog-detail-stores-from .catalog-detail-store .store,
 #catalog-detail-stores-from .catalog-detail-store .store .title,
 #catalog-detail-stores-from .catalog-detail-store .store .phone,
@@ -1908,14 +2107,17 @@ ul.left-menu > li > a {
 #catalog-detail-stores-from .catalog-detail-store .amount {
     padding: 5px;
 }
+
 #catalog-detail-stores-from .catalog-detail-store .amount {
     float: right;
     margin: auto 0;
 }
+
 #catalog-detail-stores-from .catalog-detail-store:hover {
     border: 1px solid #ef7f1a;
     cursor: pointer;
 }
+
 #catalog-detail-stores-from .catalog-detail-store a {
     color: #a0a4bc;
 }
@@ -1924,20 +2126,26 @@ ul.left-menu > li > a {
 .wrapperPageFinalPayment {
     margin-top: 10px;
 }
+
 .pageFinalPayment {
     cursor: pointer;
     display: block;
     text-decoration: none;
 }
+
 .myOrder,
 .myCatalog {
     padding: 5px 7px;
     float: left;
 }
+
 .myOrder {
     margin-right: 10px;
 }
-.myCatalog {}
+
+.myCatalog {
+}
+
 .pageFinalPaymentOrderNunber {
     color: #ef7f1a;
 }
