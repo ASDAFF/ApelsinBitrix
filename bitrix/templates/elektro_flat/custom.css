@@ -1017,7 +1017,7 @@ ul.left-menu > li > a {
 }
 
 .custom-forms label.disabled, .custom-forms.active label.disabled {
-    display: none;
+    /*display: none;*/
 }
 
 .catalog_item_toogle_filter .showfilter span:hover,
